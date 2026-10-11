@@ -42,8 +42,8 @@ flowchart LR
 - [x] `./cosmic/install.sh` for fonts, **Tokyonight-Dark** icons and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
 - [x] Cursor: system default
-- [ ] Wallpaper: `cool-wallpapers/cosmic/tokyonight/tokyonight-astronaut`
-- [ ] Screenshot for the README
+- [x] Wallpaper: `cool-wallpapers/cosmic/tokyonight/tokyonight-astronaut`
+- [x] Screenshot for the README
 
 ## The baseline every rice shares
 

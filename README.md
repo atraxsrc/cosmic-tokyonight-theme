@@ -13,14 +13,7 @@ My personal desktop setup running Pop!_OS 24.04 LTS with the COSMIC DE and Tokyo
 </div>
 
 ---
-
-## Screenshots
-
-<img src="screenshots/git2.png" width="100%" alt="desktop" />
-<img src="screenshots/firefox.png" width="100%" alt="desktop" />
-<img src="screenshots/git1.png" width="100%" alt="desktop" />
-
----
+![Pop!_OS COSMIC desktop with the Tokyo Night theme](assets/screenshot.png)
 
 ## Wallpapers
 
@@ -34,6 +27,7 @@ this rice's own pair is in [`cosmic/tokyonight/`](https://github.com/atraxsrc/co
 | [`tokyonight-astronaut-7168x4032.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-astronaut-7168x4032.png) | COSMIC astronaut, blue suit and red tubes on black |
 | [`tokyonight-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-reaper-skull-3440x1440.png) | Harbor Dark reaper in Tokyo Night yellow and pink |
 
+![The astronaut wallpaper on the Tokyo Night desktop, panel only](assets/wallpaper.png)
 
 ---
 
@@ -41,6 +35,9 @@ this rice's own pair is in [`cosmic/tokyonight/`](https://github.com/atraxsrc/co
 
 ```
 .
+├── assets
+│   ├── screenshot.png    # README screenshot
+│   └── wallpaper.png     # the astronaut on the bare desktop
 ├── btop
 │   └── TokyoNight.theme  # btop colour theme
 ├── cosmic
@@ -62,10 +59,6 @@ this rice's own pair is in [`cosmic/tokyonight/`](https://github.com/atraxsrc/co
 │   │   └── userContent.css  # New tab page accent colour
 │   ├── install.sh        # Copies chrome/ into the default profile
 │   └── README.md
-├── screenshots           # Desktop screenshots
-│   ├── firefox.png
-│   ├── git1.png
-│   └── git2.png
 ├── lsd
 │   ├── config.yaml       # theme: custom
 │   ├── colors.yaml       # permission / size / date / git columns
@@ -92,7 +85,8 @@ The whole palette is Tokyo Night, in the same format as the DarkGold baseline:
 background `#1A1B26`, containers `#24283B` / `#292E42`, navy neutrals from
 `#3B4261` to `#C0CAF5` (so frosted glass tints navy, not grey), accent blue
 `#7AA2F7`, success `#9ECE6A`, warning `#E0AF68`, error `#F7768E`. Text tint
-is pinned to `#C0CAF5`. Export from Appearance if you tweak it so you do not
+is pinned to `#C7D1FD`, a touch brighter than Tokyo Night's `#C0CAF5` so it
+stays crisp on the glass. Export from Appearance if you tweak it so you do not
 lose the changes.
 
 **Known COSMIC bug:** moving the frosted glass opacity / thickness sliders can
@@ -100,7 +94,9 @@ reset `text_tint` to `#FFFFFF`. If your text turns white, re-import
 `cosmic/TokyoNight.ron`; it carries the tint. Upstream fix proposed in
 [libcosmic#1450](https://github.com/pop-os/libcosmic/pull/1450), not merged.
 
-Frosted glass is on in the `.ron` at `frosted: VeryLow` for windows, panel,
+Frosted glass is on in the `.ron` at `frosted: Low`, with a stronger opacity
+table (0.66 to 0.96) than the other rices so the navy reads solid rather than
+see-through over a black wallpaper. It covers windows, panel,
 applets and system UI (maximized apps stay solid), and corners are squared
 (`radius_*: 2.0`), the same as the DarkGold baseline. Adjust frosted glass on
 Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
