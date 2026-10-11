@@ -115,10 +115,11 @@ background `#1A1B26`, containers `#24283B` / `#292E42`, navy neutrals from
 is pinned to `#C7D1FD`, a touch brighter than Tokyo Night's `#C0CAF5` so it
 stays crisp on the glass.
 
-Frosted glass is on at `frosted: Low`, with a stronger opacity table (0.66 to
-0.96) so the navy reads solid rather than see-through over a black wallpaper.
-It covers windows, panel, applets and system UI (maximized apps stay solid),
-and corners are squared (`radius_*: 2.0`), the same as the DarkGold baseline.
+Frosted glass is on at `frosted: Low` with an opacity table of 0.66 to 0.96,
+tinted with the palette's middle neutral `#545C7E`, the same glass as every
+other rice. It covers windows, panel, applets and system UI (maximized apps
+stay solid), and corners are squared (`radius_*: 2.0`), the same as the
+DarkGold baseline.
 Adjust it on Appearance → Style → Frosted glass after import; those sliders
 survive a theme switch. Export from Appearance if you tweak it so you do not
 lose the changes.
