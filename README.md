@@ -1,8 +1,9 @@
 <div align="center">
 
-# Pop!_OS · COSMIC · Tokyo Night
+# COSMIC · Tokyo Night
 
-My personal desktop setup running Pop!_OS 24.04 LTS with the COSMIC DE and Tokyo Night Dark theming throughout: terminal, shell, fastfetch, btop, scripts, Firefox, and wallpapers all in one place.
+Pop!_OS 24.04 on COSMIC in Tokyo Night navy, blue and lime: desktop, terminal,
+shell, editor, Firefox, wallpapers.
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-48B9C7?style=for-the-badge&logo=popos&logoColor=white)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-ff6b35?style=for-the-badge)
@@ -15,19 +16,45 @@ My personal desktop setup running Pop!_OS 24.04 LTS with the COSMIC DE and Tokyo
 ---
 ![Pop!_OS COSMIC desktop with the Tokyo Night theme](assets/screenshot.png)
 
-## Wallpapers
+## Palette
 
-Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers),
-a collection grouped by palette. The big Tokyo Night set is in
-[`tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/tokyonight);
-this rice's own pair is in [`cosmic/tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/tokyonight):
+Tokyo Night Dark, the low-contrast navy palette from the
+[VS Code theme](https://github.com/tokyo-night/tokyo-night-vscode-theme) of the
+same name. Contrast is measured on the window background `#1A1B26`.
 
-| File | What it is |
-|------|------------|
-| [`tokyonight-astronaut-7168x4032.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-astronaut-7168x4032.png) | COSMIC astronaut, blue suit and red tubes on black |
-| [`tokyonight-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-reaper-skull-3440x1440.png) | Harbor Dark reaper in Tokyo Night yellow and pink |
+| Role | Color | Hex | Contrast |
+|------|-------|-----|----------|
+| Background | ![#1a1b26](https://placehold.co/12x12/1a1b26/1a1b26.png) Dark navy | `#1A1B26` | |
+| Containers | ![#24283b](https://placehold.co/12x12/24283b/24283b.png) Storm / Highlight | `#24283B` / `#292E42` | |
+| Text | ![#c0caf5](https://placehold.co/12x12/c0caf5/c0caf5.png) Soft white | `#C0CAF5` | 10.6:1 |
+| Accent | ![#7aa2f7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) Blue | `#7AA2F7` | 6.8:1 |
+| Cyan | ![#7dcfff](https://placehold.co/12x12/7dcfff/7dcfff.png) Sky | `#7DCFFF` | 10.0:1 |
+| Purple | ![#bb9af7](https://placehold.co/12x12/bb9af7/bb9af7.png) Lavender | `#BB9AF7` | 7.4:1 |
+| Success | ![#9ece6a](https://placehold.co/12x12/9ece6a/9ece6a.png) Green | `#9ECE6A` | 9.4:1 |
+| Warning | ![#e0af68](https://placehold.co/12x12/e0af68/e0af68.png) Amber | `#E0AF68` | 8.5:1 |
+| Orange | ![#ff9e64](https://placehold.co/12x12/ff9e64/ff9e64.png) Orange | `#FF9E64` | 8.4:1 |
+| Error | ![#f7768e](https://placehold.co/12x12/f7768e/f7768e.png) Rose | `#F7768E` | 6.5:1 |
+| Muted | ![#737aa2](https://placehold.co/12x12/737aa2/737aa2.png) Dark 5 | `#737AA2` | 4.1:1 |
+| Comment | ![#565f89](https://placehold.co/12x12/565f89/565f89.png) Comment | `#565F89` | 2.8:1 |
 
-![The astronaut wallpaper on the Tokyo Night desktop, panel only](assets/wallpaper.png)
+Comments sit deliberately low, as in the original theme. Everything you read
+as text is 6.5:1 or better.
+
+### Cosmic Night (Firefox only)
+
+Firefox gets its own palette, sampled from the astronaut wallpaper with
+k-means and tuned until every text pair clears WCAG AA. It runs darker and
+cooler than the rest of the rice.
+
+| Role | Color | Hex |
+|------|-------|-----|
+| Background | ![#000000](https://placehold.co/12x12/000000/000000.png) True black | `#000000` |
+| Panels | ![#171b23](https://placehold.co/12x12/171b23/171b23.png) Shadow | `#171B23` |
+| Blue | ![#79a3f7](https://placehold.co/12x12/79a3f7/79a3f7.png) Armor | `#79A3F7` |
+| Lime | ![#a8ec61](https://placehold.co/12x12/a8ec61/a8ec61.png) Visor | `#A8EC61` |
+| Red | ![#e04c5d](https://placehold.co/12x12/e04c5d/e04c5d.png) Under-suit | `#E04C5D` |
+| Grey | ![#3a3946](https://placehold.co/12x12/3a3946/3a3946.png) Mech detail | `#3A3946` |
+| Foreground | ![#c3d0f5](https://placehold.co/12x12/c3d0f5/c3d0f5.png) Soft white | `#C3D0F5` |
 
 ---
 
@@ -36,41 +63,41 @@ this rice's own pair is in [`cosmic/tokyonight/`](https://github.com/atraxsrc/co
 ```
 .
 ├── assets
-│   ├── screenshot.png    # README screenshot
-│   └── wallpaper.png     # the astronaut on the bare desktop
+│   ├── screenshot.png           # README screenshot
+│   └── wallpaper.png            # the astronaut on the bare desktop
 ├── btop
-│   └── TokyoNight.theme  # btop colour theme
+│   └── TokyoNight.theme         # btop colour theme
 ├── cosmic
-│   ├── TokyoNight.ron    # COSMIC Appearance import
-│   ├── config/           # baseline settings: fonts, icons, terminal look
+│   ├── TokyoNight.ron           # COSMIC Appearance import (Dark)
+│   ├── config/                  # baseline settings: fonts, icons, terminal look
 │   └── install.sh
 ├── cosmic-term
-│   └── TokyoNight-term.ron  # COSMIC Terminal colour scheme
+│   └── TokyoNight-term.ron      # COSMIC Terminal colour scheme
+├── docs
+│   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
 ├── fastfetch
-│   ├── config.jsonc      # Fastfetch configuration
-│   ├── cosmic.txt        # COSMIC logo, coloured by the config
+│   ├── config.jsonc             # blue / comment-grey fastfetch config
+│   ├── cosmic.txt               # COSMIC logo, coloured by the config
 │   └── install.sh
-├── firefox               # Cosmic Night browser theme
+├── firefox                      # Cosmic Night browser theme
 │   ├── theme
-│   │   ├── manifest.json # WebExtension theme, 40 colour keys
-│   │   └── icons         # 32 / 48 / 64 / 96 / 128
+│   │   ├── manifest.json        # WebExtension theme, 40 colour keys
+│   │   └── icons                # 32 / 48 / 64 / 96 / 128
 │   ├── chrome
-│   │   ├── userChrome.css   # Browser UI: rounded corners, menu borders
-│   │   └── userContent.css  # New tab page accent colour
-│   ├── install.sh        # Copies chrome/ into the default profile
+│   │   ├── userChrome.css       # browser UI: rounded corners, menu borders
+│   │   └── userContent.css      # new tab page accent colour
+│   ├── install.sh               # copies chrome/ into the default profile
 │   └── README.md
 ├── lsd
-│   ├── config.yaml       # theme: custom
-│   ├── colors.yaml       # permission / size / date / git columns
+│   ├── config.yaml              # theme: custom
+│   ├── colors.yaml              # permission / size / date / git columns
 │   └── install.sh
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── scripts
-│   └── update_system.sh  # System update script (nala + flatpak)
+│   └── update_system.sh         # nala + flatpak, Tokyo Night ANSI
 ├── zsh
-│   ├── tokyonight.zsh    # LS_COLORS, highlighting colours, aliases, starship
+│   ├── tokyonight.zsh           # LS_COLORS, highlighting colours, aliases, starship
 │   └── install.sh
-├── docs
-│   └── showcase.md       # the rice describing itself, for the Postilla pane of the screenshot
 ├── LICENSE
 └── README.md
 ```
@@ -86,20 +113,20 @@ background `#1A1B26`, containers `#24283B` / `#292E42`, navy neutrals from
 `#3B4261` to `#C0CAF5` (so frosted glass tints navy, not grey), accent blue
 `#7AA2F7`, success `#9ECE6A`, warning `#E0AF68`, error `#F7768E`. Text tint
 is pinned to `#C7D1FD`, a touch brighter than Tokyo Night's `#C0CAF5` so it
-stays crisp on the glass. Export from Appearance if you tweak it so you do not
+stays crisp on the glass.
+
+Frosted glass is on at `frosted: Low`, with a stronger opacity table (0.66 to
+0.96) so the navy reads solid rather than see-through over a black wallpaper.
+It covers windows, panel, applets and system UI (maximized apps stay solid),
+and corners are squared (`radius_*: 2.0`), the same as the DarkGold baseline.
+Adjust it on Appearance → Style → Frosted glass after import; those sliders
+survive a theme switch. Export from Appearance if you tweak it so you do not
 lose the changes.
 
 **Known COSMIC bug:** moving the frosted glass opacity / thickness sliders can
 reset `text_tint` to `#FFFFFF`. If your text turns white, re-import
 `cosmic/TokyoNight.ron`; it carries the tint. Upstream fix proposed in
 [libcosmic#1450](https://github.com/pop-os/libcosmic/pull/1450), not merged.
-
-Frosted glass is on in the `.ron` at `frosted: Low`, with a stronger opacity
-table (0.66 to 0.96) than the other rices so the navy reads solid rather than
-see-through over a black wallpaper. It covers windows, panel,
-applets and system UI (maximized apps stay solid), and corners are squared
-(`radius_*: 2.0`), the same as the DarkGold baseline. Adjust frosted glass on
-Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
 
 ### Baseline settings
 
@@ -114,7 +141,7 @@ Appearance → Style → Frosted glass after import; those sliders survive a the
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Tokyo Night |
 
 Install the [Maple fonts](https://github.com/subframe7536/maple-font) and the
-icons (see Icons below) and import the terminal scheme (below) first, then:
+icons (see Icons below) and import the terminal scheme first, then:
 
 ```bash
 ./cosmic/install.sh
@@ -137,20 +164,43 @@ dropdown will look like it did nothing.
 
 ---
 
+## Firefox
+
+**Cosmic Night**: a true-black Firefox theme whose palette comes from the
+astronaut wallpaper rather than from Tokyo Night (see the second table under
+Palette). Blue chrome, a lime focus accent, red for alerts.
+
+```bash
+# stylesheets: rounded corners, menu borders, new tab accent
+./firefox/install.sh
+```
+
+Fully restart Firefox afterward: `userChrome.css` is only parsed at startup.
+
+The theme package itself is built from `firefox/theme/`:
+
+```bash
+cd firefox/theme && zip -r -X ../cosmic-night.zip . -x '.*'
+```
+
+Load it temporarily via `about:debugging`, or sign it at
+[AMO](https://addons.mozilla.org/developers/) (choose *On your own* for an
+unlisted, private build) for a permanent install. Firefox refuses unsigned
+add-ons, so signing is unavoidable for the latter.
+
+Full details and CSS gotchas in [`firefox/README.md`](firefox/README.md).
+
+---
+
 ## Scripts
 
 ### `update_system.sh`
 
-A full system update script with Tokyo Night colored output. Handles:
-
-- nala package updates (with apt fallback)
-- Flatpak updates
-- Snap updates: the function is included but off by default; uncomment
-  `update_snap` in `main` to enable it
-- Runtime timer and status indicators
+nala + flatpak updater with Tokyo Night coloured output: nala package updates
+(apt fallback), Flatpak updates, a Snap function that is off by default
+(uncomment `update_snap` in `main`), and a runtime timer.
 
 ```bash
-# Make executable and run (it calls sudo itself where needed)
 chmod +x scripts/update_system.sh
 ./scripts/update_system.sh
 ```
@@ -181,15 +231,15 @@ plugins if missing and appends one `source` line to `~/.zshrc` (backup in
 exec zsh
 ```
 
-In `~/.zshrc` set `ZSH_THEME=""` (starship draws the prompt) and
+In `~/.zshrc` keep `ZSH_THEME=""` and
 `plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting)`.
 
 ### lsd
 
 File names are coloured by `LS_COLORS` from `zsh/tokyonight.zsh`;
-`lsd/colors.yaml` colours the other columns with the nearest 256-colour
-matches (149 green, 111 blue, 179 yellow, 210 red, 141 purple, 60 comment).
-lsd 1.0.0 does not accept `#hex` there.
+`lsd/colors.yaml` colours the other columns with the 256-colour codes nearest
+the palette (149 green, 111 blue, 179 yellow, 210 red, 141 purple,
+60 comment). lsd 1.0.0 does not accept `#hex` there.
 
 ```bash
 ./lsd/install.sh
@@ -199,8 +249,8 @@ lsd -l
 ### fastfetch
 
 COSMIC logo in Tokyo Night blue, Hardware / Software / Age boxes in comment
-grey with purple titles, the same layout as every other rice.
-`install.sh` backs up any existing `~/.config/fastfetch/config.jsonc` to
+grey with purple titles, the same layout as every other rice. `install.sh`
+backs up any existing `~/.config/fastfetch/config.jsonc` to
 `config.jsonc.bak`.
 
 ```bash
@@ -211,19 +261,19 @@ fastfetch
 ### Neovim
 
 `nvim/` carries the rice into Neovim: a dependency-free colorscheme built from
-the palette (`nvim/colors/tokyonight.lua`), a LazyVim spec that selects it and makes
-sure the treesitter parsers for the files in this repo are installed
-(`nvim/lua/plugins/tokyonight.lua`), and a small RON syntax file so `cosmic/*.ron`
-is coloured even before the parser exists. `:terminal` inside Neovim uses the
-Tokyo Night scheme.
+the palette (`nvim/colors/tokyonight.lua`), a LazyVim spec that selects it and
+makes sure the treesitter parsers for the files in this repo are installed
+(`nvim/lua/plugins/tokyonight.lua`), and a small RON syntax file so
+`cosmic/*.ron` is coloured even before the parser exists. `:terminal` inside
+Neovim uses the Tokyo Night scheme.
 
 ```bash
 ./nvim/install.sh
 # restart nvim; LazyVim switches to the tokyonight colorscheme
 ```
 
-Without LazyVim, copy `nvim/colors/tokyonight.lua` to `~/.config/nvim/colors/` and
-run `:colorscheme tokyonight`.
+Without LazyVim, copy `nvim/colors/tokyonight.lua` to `~/.config/nvim/colors/`
+and run `:colorscheme tokyonight`.
 
 ### btop
 
@@ -238,11 +288,11 @@ cp btop/TokyoNight.theme ~/.config/btop/themes/
 
 ---
 
-## Icons
+## Icons and wallpaper
 
-Tokyonight-Dark from
+Icons: **Tokyonight-Dark** from
 [Fausto-Korpsvart/Tokyonight-GTK-Theme](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme/tree/master/icons)
-(also in that folder: `-Dark-Cyan`, `-Moon`, `-Light`).
+(also in that folder: `-Dark-Cyan`, `-Moon`, `-Light`):
 
 ```bash
 git clone --depth 1 https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git
@@ -251,96 +301,48 @@ cp -r Tokyonight-GTK-Theme/icons/Tokyonight-Dark ~/.local/share/icons/
 # Settings → Desktop → Appearance → Icons → Tokyonight-Dark
 ```
 
----
+Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers).
+This rice's own pair is in
+[`cosmic/tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/tokyonight),
+and the big Tokyo Night set is in
+[`tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/tokyonight):
 
-## Firefox
+| File | What it is |
+|------|------------|
+| [`tokyonight-astronaut-7168x4032.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-astronaut-7168x4032.png) | COSMIC astronaut, blue suit and red tubes on black |
+| [`tokyonight-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-reaper-skull-3440x1440.png) | Harbor Dark reaper in Tokyo Night yellow and pink |
 
-**Cosmic Night**: a true-black Firefox theme whose palette is sampled from the
-COSMIC astronaut wallpaper ([`tokyonight-astronaut`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-astronaut-7168x4032.png))
-rather than taken from Tokyo Night, so it runs cooler and
-darker than the rest of the rice. Blue chrome, a lime focus accent, red for
-alerts.
+Settings → Wallpaper → Add image → the file you downloaded.
 
-```bash
-# Stylesheets: rounded corners, menu borders, new tab accent
-./firefox/install.sh
-```
-
-Then fully restart Firefox: `userChrome.css` is only parsed at startup.
-
-The theme package itself is built from `firefox/theme/`:
-
-```bash
-cd firefox/theme && zip -r -X ../cosmic-night.zip . -x '.*'
-```
-
-Load it temporarily via `about:debugging`, or sign it at
-[AMO](https://addons.mozilla.org/developers/) (choose *On your own* for an
-unlisted, private build) for a permanent install. Firefox refuses unsigned
-add-ons, so signing is unavoidable for the latter.
-
-Full details, palette table, and CSS gotchas in
-[`firefox/README.md`](firefox/README.md).
-
----
-
-## Theme
-
-Everything is themed around Tokyo Night Dark, a low-contrast, dark blue palette originally from the VSCode theme by the same name.
-
-| Role | Color | Hex |
-|------|-------|-----|
-| Background | ![#1a1b26](https://placehold.co/12x12/1a1b26/1a1b26.png) Dark Navy | `#1a1b26` |
-| Foreground | ![#c0caf5](https://placehold.co/12x12/c0caf5/c0caf5.png) Soft White | `#c0caf5` |
-| Cyan | ![#7dcfff](https://placehold.co/12x12/7dcfff/7dcfff.png) Sky Blue | `#7dcfff` |
-| Blue | ![#7aa2f7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) Periwinkle | `#7aa2f7` |
-| Purple | ![#bb9af7](https://placehold.co/12x12/bb9af7/bb9af7.png) Lavender | `#bb9af7` |
-| Green | ![#9ece6a](https://placehold.co/12x12/9ece6a/9ece6a.png) Sage | `#9ece6a` |
-| Yellow | ![#e0af68](https://placehold.co/12x12/e0af68/e0af68.png) Amber | `#e0af68` |
-| Red | ![#f7768e](https://placehold.co/12x12/f7768e/f7768e.png) Rose | `#f7768e` |
-
-### Cosmic Night (Firefox)
-
-Sampled from the wallpaper with k-means, then tuned until every text pair
-clears WCAG AA. Darker and cooler than the palette above.
-
-| Role | Color | Hex |
-|------|-------|-----|
-| Background | ![#000000](https://placehold.co/12x12/000000/000000.png) True Black | `#000000` |
-| Panels | ![#171b23](https://placehold.co/12x12/171b23/171b23.png) Shadow | `#171b23` |
-| Blue | ![#79a3f7](https://placehold.co/12x12/79a3f7/79a3f7.png) Armor | `#79a3f7` |
-| Lime | ![#a8ec61](https://placehold.co/12x12/a8ec61/a8ec61.png) Visor | `#a8ec61` |
-| Red | ![#e04c5d](https://placehold.co/12x12/e04c5d/e04c5d.png) Under-suit | `#e04c5d` |
-| Grey | ![#3a3946](https://placehold.co/12x12/3a3946/3a3946.png) Mech Detail | `#3a3946` |
-| Foreground | ![#c3d0f5](https://placehold.co/12x12/c3d0f5/c3d0f5.png) Soft White | `#c3d0f5` |
+![The astronaut wallpaper on the Tokyo Night desktop, panel only](assets/wallpaper.png)
 
 ---
 
 ## Setup
 
-### Prerequisites
+Prerequisites: [nala](https://gitlab.com/volian/nala) for the update script
+and a recent fastfetch.
 
 ```bash
-# Install nala (better apt frontend)
 sudo apt install nala
-
-# Install fastfetch
 sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
 sudo nala update && sudo nala install fastfetch
 ```
 
-### Apply
+Then:
 
 ```bash
-# Clone the repo
 git clone https://github.com/atraxsrc/cosmic-tokyonight-theme.git
 cd cosmic-tokyonight-theme
 
-# COSMIC theme
+# desktop
 # Settings → Appearance → Dark → Import cosmic/TokyoNight.ron
 
 # terminal
 # View → Color schemes → Import cosmic-term/TokyoNight-term.ron
+
+# firefox stylesheets (optional)
+./firefox/install.sh
 
 # shell + terminal tools (see Terminal extras above)
 ./zsh/install.sh
@@ -349,12 +351,13 @@ cd cosmic-tokyonight-theme
 ./nvim/install.sh
 mkdir -p ~/.config/btop/themes && cp btop/TokyoNight.theme ~/.config/btop/themes/
 
+# wallpaper
+# Settings → Wallpaper → Add image → a file from
+# https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/tokyonight
+
 # icons (see Icons above) + Maple fonts (https://github.com/subframe7536/maple-font), then
 # fonts, icons, terminal look from cosmic/config/
 ./cosmic/install.sh
-
-# Firefox stylesheets (optional)
-./firefox/install.sh
 ```
 
 ---
@@ -364,22 +367,21 @@ mkdir -p ~/.config/btop/themes && cp btop/TokyoNight.theme ~/.config/btop/themes
 | Tool | What it does |
 |------|-------------|
 | [Pop!_OS 24.04](https://pop.system76.com/) | Base OS by System76 |
-| [COSMIC DE](https://system76.com/cosmic) | Desktop environment (Rust + Iced) |
-| [Tokyo Night](https://github.com/tokyo-night/tokyo-night-vscode-theme) | Color scheme |
-| [fastfetch](https://github.com/fastfetch-cli/fastfetch) | System info fetcher |
-| [nala](https://gitlab.com/volian/nala) | Better apt frontend |
-| [zsh](https://www.zsh.org/) + [oh-my-zsh](https://ohmyz.sh/) | Shell |
+| [COSMIC DE](https://system76.com/cosmic) | Desktop environment |
+| [oh-my-zsh](https://ohmyz.sh/) | zsh framework + plugins |
 | [lsd](https://github.com/lsd-rs/lsd) | `ls` with icons and colours |
+| [fastfetch](https://github.com/fastfetch-cli/fastfetch) | System info |
 | [btop](https://github.com/aristocratos/btop) | Resource monitor |
-| [Tokyonight icons](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme/tree/master/icons) | Icon pack |
-| [Firefox](https://www.mozilla.org/firefox/) | Browser, themed with Cosmic Night |
+| [nala](https://gitlab.com/volian/nala) | Nicer apt frontend for the update script |
+| [Tokyonight-GTK-Theme](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) | Icon pack (Tokyonight-Dark) |
 
----
+## Credits
+
+- Palette: [Tokyo Night](https://github.com/tokyo-night/tokyo-night-vscode-theme),
+  the VS Code theme. This repo is a COSMIC port.
+- Shared baseline (frosted glass, squared corners, fonts) from
+  [cosmic-darkgold-theme](https://github.com/atraxsrc/cosmic-darkgold-theme).
 
 ## License
 
-MIT. Do whatever you want with it. Attribution appreciated but not required.
-
-<div align="center">
-  <sub>Built on Pop!_OS 24.04 · COSMIC 1.0.0 · Tokyo Night Dark</sub>
-</div>
+MIT
