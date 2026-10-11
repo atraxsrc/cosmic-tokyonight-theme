@@ -76,6 +76,8 @@ this rice's own pair is in [`cosmic/tokyonight/`](https://github.com/atraxsrc/co
 ├── zsh
 │   ├── tokyonight.zsh    # LS_COLORS, highlighting colours, aliases, starship
 │   └── install.sh
+├── docs
+│   └── showcase.md       # the rice describing itself, for the Postilla pane of the screenshot
 ├── LICENSE
 └── README.md
 ```
