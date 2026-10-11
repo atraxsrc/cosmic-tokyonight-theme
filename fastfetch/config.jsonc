@@ -2,7 +2,10 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "type": "file",
-    "source": "~/.config/fastfetch/cosmicTN.txt",
+    "source": "~/.config/fastfetch/cosmic.txt",
+    "color": {
+      "1": "38;2;122;162;247"
+    },
     "padding": {
       "top": 3,
       "left": 2,

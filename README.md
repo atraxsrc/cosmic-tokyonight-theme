@@ -51,8 +51,7 @@ this rice's own pair is in [`cosmic/tokyonight/`](https://github.com/atraxsrc/co
 │   └── TokyoNight-term.ron  # COSMIC Terminal colour scheme
 ├── fastfetch
 │   ├── config.jsonc      # Fastfetch configuration
-│   ├── cosmicTN.txt      # COSMIC logo, Tokyo Night gradient
-│   ├── cosmic.txt
+│   ├── cosmic.txt        # COSMIC logo, coloured by the config
 │   └── install.sh
 ├── firefox               # Cosmic Night browser theme
 │   ├── theme
@@ -89,9 +88,17 @@ this rice's own pair is in [`cosmic/tokyonight/`](https://github.com/atraxsrc/co
 
 Settings → Desktop → Appearance → **Dark** → **Import** → `cosmic/TokyoNight.ron`
 
-Sets the Tokyo Night background (`#1a1b26`), container (`#24283b`), accent
-blue (`#7aa2f7`) and text tint. The rest of the palette is COSMIC's default
-dark. Export from Appearance if you tweak it so you do not lose the changes.
+The whole palette is Tokyo Night, in the same format as the DarkGold baseline:
+background `#1A1B26`, containers `#24283B` / `#292E42`, navy neutrals from
+`#3B4261` to `#C0CAF5` (so frosted glass tints navy, not grey), accent blue
+`#7AA2F7`, success `#9ECE6A`, warning `#E0AF68`, error `#F7768E`. Text tint
+is pinned to `#C0CAF5`. Export from Appearance if you tweak it so you do not
+lose the changes.
+
+**Known COSMIC bug:** moving the frosted glass opacity / thickness sliders can
+reset `text_tint` to `#FFFFFF`. If your text turns white, re-import
+`cosmic/TokyoNight.ron`; it carries the tint. Upstream fix proposed in
+[libcosmic#1450](https://github.com/pop-os/libcosmic/pull/1450), not merged.
 
 Frosted glass is on in the `.ron` at `frosted: VeryLow` for windows, panel,
 applets and system UI (maximized apps stay solid), and corners are squared
@@ -195,7 +202,8 @@ lsd -l
 
 ### fastfetch
 
-COSMIC logo with a Tokyo Night gradient and Hardware / Software / Age boxes.
+COSMIC logo in Tokyo Night blue, Hardware / Software / Age boxes in comment
+grey with purple titles, the same layout as every other rice.
 `install.sh` backs up any existing `~/.config/fastfetch/config.jsonc` to
 `config.jsonc.bak`.
 
