@@ -25,9 +25,15 @@ My personal desktop setup running Pop!_OS 24.04 LTS with the COSMIC DE and Tokyo
 ## Wallpapers
 
 Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers),
-a collection grouped by palette. The ones for this rice are in
-[`tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/tokyonight)
-and [`cosmic/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic).
+a collection grouped by palette. The big Tokyo Night set is in
+[`tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/tokyonight);
+this rice's own pair is in [`cosmic/tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/tokyonight):
+
+| File | What it is |
+|------|------------|
+| [`tokyonight-astronaut-7168x4032.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-astronaut-7168x4032.png) | COSMIC astronaut, blue suit and red tubes on black |
+| [`tokyonight-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-reaper-skull-3440x1440.png) | Harbor Dark reaper in Tokyo Night yellow and pink |
+
 
 ---
 
@@ -226,7 +232,7 @@ cp -r Tokyonight-GTK-Theme/icons/Tokyonight-Dark ~/.local/share/icons/
 ## Firefox
 
 **Cosmic Night**: a true-black Firefox theme whose palette is sampled from the
-COSMIC wallpaper ([`cosmic-astronaut-firefox`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/cosmic-astronaut-firefox-7168x4032.png))
+COSMIC astronaut wallpaper ([`tokyonight-astronaut`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-astronaut-7168x4032.png))
 rather than taken from Tokyo Night, so it runs cooler and
 darker than the rest of the rice. Blue chrome, a lime focus accent, red for
 alerts.
