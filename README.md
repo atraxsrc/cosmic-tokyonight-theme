@@ -71,6 +71,7 @@ this rice's own pair is in [`cosmic/tokyonight/`](https://github.com/atraxsrc/co
 │   ├── config.yaml       # theme: custom
 │   ├── colors.yaml       # permission / size / date / git columns
 │   └── install.sh
+├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── scripts
 │   └── update_system.sh  # System update script (nala + flatpak)
 ├── zsh
@@ -203,6 +204,23 @@ COSMIC logo with a Tokyo Night gradient and Hardware / Software / Age boxes.
 fastfetch
 ```
 
+### Neovim
+
+`nvim/` carries the rice into Neovim: a dependency-free colorscheme built from
+the palette (`nvim/colors/tokyonight.lua`), a LazyVim spec that selects it and makes
+sure the treesitter parsers for the files in this repo are installed
+(`nvim/lua/plugins/tokyonight.lua`), and a small RON syntax file so `cosmic/*.ron`
+is coloured even before the parser exists. `:terminal` inside Neovim uses the
+Tokyo Night scheme.
+
+```bash
+./nvim/install.sh
+# restart nvim; LazyVim switches to the tokyonight colorscheme
+```
+
+Without LazyVim, copy `nvim/colors/tokyonight.lua` to `~/.config/nvim/colors/` and
+run `:colorscheme tokyonight`.
+
 ### btop
 
 `btop/TokyoNight.theme`: navy background, blue titles, green → yellow → red
@@ -324,6 +342,7 @@ cd cosmic-tokyonight-theme
 ./zsh/install.sh
 ./lsd/install.sh
 ./fastfetch/install.sh
+./nvim/install.sh
 mkdir -p ~/.config/btop/themes && cp btop/TokyoNight.theme ~/.config/btop/themes/
 
 # icons (see Icons above) + Maple fonts (https://github.com/subframe7536/maple-font), then
