@@ -65,6 +65,7 @@ cooler than the rest of the rice.
 ├── assets
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the astronaut on the bare desktop
+├── backgrounds/                 # wallpapers, tokyonight-<subject>.png (see Icons and wallpaper)
 ├── btop
 │   └── TokyoNight.theme         # btop colour theme
 ├── cosmic
@@ -305,18 +306,35 @@ Restart open apps afterwards (Files caches icons per window).
 Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
-Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers).
-This rice's own pair is in
-[`cosmic/tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/tokyonight),
-and the big Tokyo Night set is in
-[`tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/tokyonight):
+Wallpapers ship in [`backgrounds/`](backgrounds/), named `tokyonight-<subject>.png`:
+the thirteen subjects every dark rice has, rendered in Tokyo Night blue and yellow,
+plus the astronaut on black. The big Tokyo Night set stays in
+[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers), folder
+[`tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/tokyonight).
+The reaper and the blueprint are Harbor Dark subjects, the eagle and the
+portrait are from The Greek (both [HANCORE-linux](https://github.com/HANCORE-linux),
+MIT); the samurai, sushi, geisha, mug and street are from the Tokyo Night set in
+[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers). Each was rendered
+again in this palette, then upscaled.
 
-| File | What it is |
-|------|------------|
-| [`tokyonight-astronaut-7168x4032.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-astronaut-7168x4032.png) | COSMIC astronaut, blue suit and red tubes on black |
-| [`tokyonight-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/tokyonight/tokyonight-reaper-skull-3440x1440.png) | Harbor Dark reaper in Tokyo Night yellow and pink |
+| File | Size | What it is |
+|------|------|------------|
+| [`tokyonight-reaper-skull.png`](backgrounds/tokyonight-reaper-skull.png) | 5120x3200 | Harbor Dark reaper in Tokyo Night yellow and blue |
+| [`tokyonight-hyundai-blueprint.png`](backgrounds/tokyonight-hyundai-blueprint.png) | 5120x3200 | Hyundai N Vision 74 blueprint, line work |
+| [`tokyonight-cosmic-astronaut.png`](backgrounds/tokyonight-cosmic-astronaut.png) | 5376x3312 | The COSMIC astronaut on the window background |
+| [`tokyonight-samurai.png`](backgrounds/tokyonight-samurai.png) | 5120x3200 | Samurai silhouette against a full moon |
+| [`tokyonight-sushi-switch.png`](backgrounds/tokyonight-sushi-switch.png) | 5120x3200 | Sushi on a Switch, clouds and wave pattern |
+| [`tokyonight-geisha-vivid.png`](backgrounds/tokyonight-geisha-vivid.png) | 5120x3200 | Geisha in a patterned kimono inside a circle |
+| [`tokyonight-js-mug.png`](backgrounds/tokyonight-js-mug.png) | 5120x3200 | JS mug with a splash |
+| [`tokyonight-neon-city.png`](backgrounds/tokyonight-neon-city.png) | 5120x3200 | Rainy street of lit shopfronts |
+| [`tokyonight-eagle.png`](backgrounds/tokyonight-eagle.png) | 5376x3312 | Ink eagle head with splashes |
+| [`tokyonight-anime.png`](backgrounds/tokyonight-anime.png) | 5376x3312 | Ink portrait, long hair, splashes |
+| [`tokyonight-city.png`](backgrounds/tokyonight-city.png) | 5376x3312 | Night skyline, one lit tower, a disc in the sky |
+| [`tokyonight-panel.png`](backgrounds/tokyonight-panel.png) | 5120x3200 | Layered circuit panels, one lit strip |
+| [`tokyonight-tower.png`](backgrounds/tokyonight-tower.png) | 5120x3200 | Isometric dark tower on a platform |
+| [`tokyonight-cosmic-astronaut-black.png`](backgrounds/tokyonight-cosmic-astronaut-black.png) | 7168x4032 | The COSMIC astronaut, blue suit and red tubes on black. The one in the screenshot, and the image the Firefox palette was sampled from |
 
-Settings → Wallpaper → Add image → the file you downloaded.
+Settings → Wallpaper → Add image → a file from `backgrounds/`.
 
 ![The astronaut wallpaper on the Tokyo Night desktop, panel only](assets/wallpaper.png)
 
@@ -356,8 +374,7 @@ cd cosmic-tokyonight-theme
 mkdir -p ~/.config/btop/themes && cp btop/TokyoNight.theme ~/.config/btop/themes/
 
 # wallpaper
-# Settings → Wallpaper → Add image → a file from
-# https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/tokyonight
+# Settings → Wallpaper → Add image → a file from backgrounds/ (see Icons and wallpaper above)
 
 ./icons/install.sh                  # icons (see Icons above)
 # Maple fonts (https://github.com/subframe7536/maple-font), then

@@ -1,7 +1,7 @@
 # Firefox - Cosmic Night
 
 Firefox theme matching the COSMIC rice. Palette sampled directly from the
-wallpaper, [`cosmic-astronaut-firefox`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/cosmic-astronaut-firefox-7168x4032.png)
+wallpaper, [`tokyonight-cosmic-astronaut-black.png`](../backgrounds/tokyonight-cosmic-astronaut-black.png)
 (k-means over the image, then tuned until every text pair clears WCAG AA).
 
 ## Palette
