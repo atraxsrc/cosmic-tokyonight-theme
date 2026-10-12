@@ -167,27 +167,21 @@ dropdown will look like it did nothing.
 
 ## Firefox
 
-**Cosmic Night**: a true-black Firefox theme whose palette comes from the
-astronaut wallpaper rather than from Tokyo Night (see the second table under
-Palette). Blue chrome, a lime focus accent, red for alerts.
+Two layers:
+
+1. **Theme (colours):** install
+   **[Cosmic Night on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/cosmic-night/)**.
+   This is the main look: a true-black theme whose palette comes from the
+   astronaut wallpaper rather than from Tokyo Night (see the second table
+   under Palette). Blue chrome, a lime focus accent, red for alerts.
+2. **Stylesheets (optional):** `firefox/chrome/` adds rounded corners, menu
+   borders and the new tab accent on top of the theme:
 
 ```bash
-# stylesheets: rounded corners, menu borders, new tab accent
 ./firefox/install.sh
 ```
 
 Fully restart Firefox afterward: `userChrome.css` is only parsed at startup.
-
-The theme package itself is built from `firefox/theme/`:
-
-```bash
-cd firefox/theme && zip -r -X ../cosmic-night.zip . -x '.*'
-```
-
-Load it temporarily via `about:debugging`, or sign it at
-[AMO](https://addons.mozilla.org/developers/) (choose *On your own* for an
-unlisted, private build) for a permanent install. Firefox refuses unsigned
-add-ons, so signing is unavoidable for the latter.
 
 Full details and CSS gotchas in [`firefox/README.md`](firefox/README.md).
 

@@ -66,22 +66,21 @@ To undo: delete the two files and restart. The theme still works on its own.
 
 ### Theme
 
-Build the package:
+Install from AMO: **[Cosmic Night](https://addons.mozilla.org/en-US/firefox/addon/cosmic-night/)**.
+
+To try local changes, build the package:
 
 ```bash
 cd theme && zip -r -X ../cosmic-night.zip . -x '.*'
 ```
 
-Then either:
+and load it via `about:debugging#/runtime/this-firefox` → Load Temporary
+Add-on (gone on restart).
 
-- **Temporary** - `about:debugging#/runtime/this-firefox` → Load Temporary
-  Add-on. Gone on restart.
-- **Permanent** - submit to [AMO](https://addons.mozilla.org/developers/) as
-  *On your own* (unlisted). Signing is automatic; download the signed `.xpi`
-  and install via `about:addons` → gear → Install Add-on From File.
-
-Firefox refuses unsigned add-ons, so the signing step is unavoidable for a
-permanent install.
+To release a new version, bump `version` in `theme/manifest.json`, build the
+zip, and upload it on the [Developer Hub](https://addons.mozilla.org/developers/)
+→ Cosmic Night → Upload a New Version → **On this site**. AMO refuses a
+version number it has seen before.
 
 ## Notes
 
