@@ -18,6 +18,6 @@ done
 
 cat <<'EOF'
 
-Done. Needs the Maple fonts and Tokyonight icons installed, and the Tokyo Night terminal scheme
+Done. Needs the Maple fonts and Cosmic-TokyoNight icons (./icons/install.sh) installed, and the Tokyo Night terminal scheme
 imported, or COSMIC falls back to its defaults.
 EOF

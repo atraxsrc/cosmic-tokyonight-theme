@@ -75,6 +75,8 @@ cooler than the rest of the rice.
 │   └── TokyoNight-term.ron      # COSMIC Terminal colour scheme
 ├── docs
 │   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
+├── icons
+│   └── install.sh               # Cosmic-TokyoNight icon pack from cosmic-icon-themes
 ├── fastfetch
 │   ├── config.jsonc             # blue / comment-grey fastfetch config
 │   ├── cosmic.txt               # COSMIC logo, coloured by the config
@@ -137,12 +139,12 @@ reset `text_tint` to `#FFFFFF`. If your text turns white, re-import
 | Where | Setting |
 |-------|---------|
 | Fonts | Interface `Maple Normal UI`, monospace `Maple Mono Normal NFM` |
-| Icons | Tokyonight-Dark |
+| Icons | Cosmic-TokyoNight-Blue |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Tokyo Night |
 
 Install the [Maple fonts](https://github.com/subframe7536/maple-font) and the
-icons (see Icons below) and import the terminal scheme first, then:
+Cosmic-TokyoNight icons (see Icons below) and import the terminal scheme first, then:
 
 ```bash
 ./cosmic/install.sh
@@ -285,16 +287,21 @@ cp btop/TokyoNight.theme ~/.config/btop/themes/
 
 ## Icons and wallpaper
 
-Icons: **Tokyonight-Dark** from
-[Fausto-Korpsvart/Tokyonight-GTK-Theme](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme/tree/master/icons)
-(also in that folder: `-Dark-Cyan`, `-Moon`, `-Light`):
+Icons: **Cosmic-TokyoNight**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
+by Fausto Korpsvart recolored to this palette in
+[cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
+four colors: **Blue** `#7AA2F7` (default), **Purple** `#BB9AF7`, **Green** `#9ECE6A` and **Dark** `#292E42` with blue symbols.
+
+![Cosmic-TokyoNight folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-TokyoNight.png)
 
 ```bash
-git clone --depth 1 https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git
-mkdir -p ~/.local/share/icons
-cp -r Tokyonight-GTK-Theme/icons/Tokyonight-Dark ~/.local/share/icons/
-# Settings → Desktop → Appearance → Icons → Tokyonight-Dark
+./icons/install.sh                   # Blue folders
+./icons/install.sh --variant Purple  # or Green, Dark
 ```
+
+It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
+installs it to `~/.local/share/icons/` and sets it as the COSMIC icon theme.
+Restart open apps afterwards (Files caches icons per window).
 
 Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers).
 This rice's own pair is in
@@ -350,7 +357,8 @@ mkdir -p ~/.config/btop/themes && cp btop/TokyoNight.theme ~/.config/btop/themes
 # Settings → Wallpaper → Add image → a file from
 # https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/tokyonight
 
-# icons (see Icons above) + Maple fonts (https://github.com/subframe7536/maple-font), then
+./icons/install.sh                  # icons (see Icons above)
+# Maple fonts (https://github.com/subframe7536/maple-font), then
 # fonts, icons, terminal look from cosmic/config/
 ./cosmic/install.sh
 ```
@@ -368,7 +376,7 @@ mkdir -p ~/.config/btop/themes && cp btop/TokyoNight.theme ~/.config/btop/themes
 | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | System info |
 | [btop](https://github.com/aristocratos/btop) | Resource monitor |
 | [nala](https://gitlab.com/volian/nala) | Nicer apt frontend for the update script |
-| [Tokyonight-GTK-Theme](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) | Icon pack (Tokyonight-Dark) |
+| [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes) | Icon pack (Cosmic-TokyoNight), recolored from [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa) |
 
 ## Credits
 
