@@ -3,7 +3,7 @@
 # COSMIC · Tokyo Night
 
 Pop!_OS 24.04 on COSMIC in Tokyo Night navy, blue and lime: desktop, terminal,
-shell, editor, Firefox, wallpapers.
+shell, editor, Firefox, cursor, wallpapers.
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-48B9C7?style=for-the-badge&logo=popos&logoColor=white)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-ff6b35?style=for-the-badge)
@@ -63,6 +63,7 @@ cooler than the rest of the rice.
 ```
 .
 ├── assets
+│   ├── cursors/                 # cursor previews
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the astronaut on the bare desktop
 ├── backgrounds/                 # wallpapers, tokyonight-<subject>.png (see Icons and wallpaper)
@@ -74,6 +75,11 @@ cooler than the rest of the rice.
 │   └── install.sh
 ├── cosmic-term
 │   └── TokyoNight-term.ron      # COSMIC Terminal colour scheme
+├── cursors
+│   ├── Oxygen-TokyoNight-*/      # cursor themes, one per icon colour, patched for COSMIC apps
+│   ├── install.sh
+│   ├── uninstall.sh
+│   └── README.md
 ├── docs
 │   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
 ├── icons
@@ -286,6 +292,23 @@ cp btop/TokyoNight.theme ~/.config/btop/themes/
 
 ---
 
+## Cursor
+
+**Oxygen** cursors recoloured to the icon colours, one per folder colour of the
+Cosmic-TokyoNight icon pack: **Blue** (default), **Purple**, **Green**, **Dark**. Patched with the cursor
+names COSMIC apps ask for. COSMIC has no cursor picker yet, so the script sets it:
+
+```bash
+./cursors/install.sh                      # Blue
+./cursors/install.sh --variant Purple    # or another, see --list
+reboot
+```
+
+Previews, what the script touches, how to undo it and how the colours are made:
+[`cursors/README.md`](cursors/README.md).
+
+---
+
 ## Icons and wallpaper
 
 Icons: **Cosmic-TokyoNight**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
@@ -376,6 +399,7 @@ mkdir -p ~/.config/btop/themes && cp btop/TokyoNight.theme ~/.config/btop/themes
 # wallpaper
 # Settings → Wallpaper → Add image → a file from backgrounds/ (see Icons and wallpaper above)
 
+./cursors/install.sh                # cursor, Blue (see Cursor above), then reboot
 ./icons/install.sh                  # icons (see Icons above)
 # Maple fonts (https://github.com/subframe7536/maple-font), then
 # fonts, icons, terminal look from cosmic/config/
@@ -396,6 +420,7 @@ mkdir -p ~/.config/btop/themes && cp btop/TokyoNight.theme ~/.config/btop/themes
 | [btop](https://github.com/aristocratos/btop) | Resource monitor |
 | [nala](https://gitlab.com/volian/nala) | Nicer apt frontend for the update script |
 | [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes) | Icon pack (Cosmic-TokyoNight), recolored from [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa) |
+| [Oxygen-Cursors](https://github.com/wo2ni/Oxygen-Cursors) | Cursor, recoloured to the icon colours |
 
 ## Credits
 
@@ -406,4 +431,5 @@ mkdir -p ~/.config/btop/themes && cp btop/TokyoNight.theme ~/.config/btop/themes
 
 ## License
 
-MIT
+MIT. The cursor artwork keeps the terms of KDE's Oxygen project, see
+[`cursors/README.md`](cursors/README.md).

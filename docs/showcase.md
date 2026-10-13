@@ -41,7 +41,7 @@ flowchart LR
 - [x] Import `cosmic-term/TokyoNight-term.ron`, pick **Tokyo Night** for the profile
 - [x] `./icons/install.sh` for the **Cosmic-TokyoNight** icons, `./cosmic/install.sh` for fonts and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
-- [x] Cursor: system default
+- [x] Cursor: Oxygen-TokyoNight-Blue
 - [x] Wallpaper: `backgrounds/tokyonight-cosmic-astronaut-black.png`
 - [x] Screenshot for the README
 
