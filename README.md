@@ -330,32 +330,16 @@ Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `tokyonight-<subject>.png`:
-the thirteen subjects every dark rice has, rendered in Tokyo Night blue and yellow,
-plus the astronaut on black. The big Tokyo Night set stays in
-[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers), folder
+the thirteen subjects every dark rice has, rendered in Tokyo Night blue and yellow:
+the Harbor Dark reaper and Hyundai blueprint, the COSMIC astronaut, the samurai,
+sushi switch, geisha, JS mug and neon street from the Tokyo Night set, The Greek
+eagle and ink portrait, and three new scenes: city, panel and tower.
+Plus the astronaut on black, `tokyonight-cosmic-astronaut-black.png`: the one in the
+screenshot, and the image the Firefox palette was sampled from.
+The subjects come from [HANCORE-linux](https://github.com/HANCORE-linux) (MIT) and
+[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers); each was rendered again in this palette, then upscaled.
+The big Tokyo Night set stays in cool-wallpapers, folder
 [`tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/tokyonight).
-The reaper and the blueprint are Harbor Dark subjects, the eagle and the
-portrait are from The Greek (both [HANCORE-linux](https://github.com/HANCORE-linux),
-MIT); the samurai, sushi, geisha, mug and street are from the Tokyo Night set in
-[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers). Each was rendered
-again in this palette, then upscaled.
-
-| File | Size | What it is |
-|------|------|------------|
-| [`tokyonight-reaper-skull.png`](backgrounds/tokyonight-reaper-skull.png) | 5120x3200 | Harbor Dark reaper in Tokyo Night yellow and blue |
-| [`tokyonight-hyundai-blueprint.png`](backgrounds/tokyonight-hyundai-blueprint.png) | 5328x3312 | Hyundai N Vision 74 blueprint, line work |
-| [`tokyonight-cosmic-astronaut.png`](backgrounds/tokyonight-cosmic-astronaut.png) | 5376x3312 | The COSMIC astronaut on the window background |
-| [`tokyonight-samurai.png`](backgrounds/tokyonight-samurai.png) | 5120x3200 | Samurai silhouette against a full moon |
-| [`tokyonight-sushi-switch.png`](backgrounds/tokyonight-sushi-switch.png) | 5120x3200 | Sushi on a Switch, clouds and wave pattern |
-| [`tokyonight-geisha-vivid.png`](backgrounds/tokyonight-geisha-vivid.png) | 5120x3200 | Geisha in a patterned kimono inside a circle |
-| [`tokyonight-js-mug.png`](backgrounds/tokyonight-js-mug.png) | 5120x3200 | JS mug with a splash |
-| [`tokyonight-neon-city.png`](backgrounds/tokyonight-neon-city.png) | 5120x3200 | Rainy street of lit shopfronts |
-| [`tokyonight-eagle.png`](backgrounds/tokyonight-eagle.png) | 5376x3312 | Ink eagle head with splashes |
-| [`tokyonight-anime.png`](backgrounds/tokyonight-anime.png) | 5376x3312 | Ink portrait, long hair, splashes |
-| [`tokyonight-city.png`](backgrounds/tokyonight-city.png) | 5376x3312 | Night skyline, one lit tower, a disc in the sky |
-| [`tokyonight-panel.png`](backgrounds/tokyonight-panel.png) | 5120x3200 | Layered circuit panels, one lit strip |
-| [`tokyonight-tower.png`](backgrounds/tokyonight-tower.png) | 5328x3312 | Isometric dark tower on a platform |
-| [`tokyonight-cosmic-astronaut-black.png`](backgrounds/tokyonight-cosmic-astronaut-black.png) | 7168x4032 | The COSMIC astronaut, blue suit and red tubes on black. The one in the screenshot, and the image the Firefox palette was sampled from |
 
 Settings → Wallpaper → Add image → a file from `backgrounds/`.
 
