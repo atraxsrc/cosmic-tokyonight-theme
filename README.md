@@ -343,7 +343,7 @@ again in this palette, then upscaled.
 | File | Size | What it is |
 |------|------|------------|
 | [`tokyonight-reaper-skull.png`](backgrounds/tokyonight-reaper-skull.png) | 5120x3200 | Harbor Dark reaper in Tokyo Night yellow and blue |
-| [`tokyonight-hyundai-blueprint.png`](backgrounds/tokyonight-hyundai-blueprint.png) | 5120x3200 | Hyundai N Vision 74 blueprint, line work |
+| [`tokyonight-hyundai-blueprint.png`](backgrounds/tokyonight-hyundai-blueprint.png) | 5328x3312 | Hyundai N Vision 74 blueprint, line work |
 | [`tokyonight-cosmic-astronaut.png`](backgrounds/tokyonight-cosmic-astronaut.png) | 5376x3312 | The COSMIC astronaut on the window background |
 | [`tokyonight-samurai.png`](backgrounds/tokyonight-samurai.png) | 5120x3200 | Samurai silhouette against a full moon |
 | [`tokyonight-sushi-switch.png`](backgrounds/tokyonight-sushi-switch.png) | 5120x3200 | Sushi on a Switch, clouds and wave pattern |
@@ -354,7 +354,7 @@ again in this palette, then upscaled.
 | [`tokyonight-anime.png`](backgrounds/tokyonight-anime.png) | 5376x3312 | Ink portrait, long hair, splashes |
 | [`tokyonight-city.png`](backgrounds/tokyonight-city.png) | 5376x3312 | Night skyline, one lit tower, a disc in the sky |
 | [`tokyonight-panel.png`](backgrounds/tokyonight-panel.png) | 5120x3200 | Layered circuit panels, one lit strip |
-| [`tokyonight-tower.png`](backgrounds/tokyonight-tower.png) | 5120x3200 | Isometric dark tower on a platform |
+| [`tokyonight-tower.png`](backgrounds/tokyonight-tower.png) | 5328x3312 | Isometric dark tower on a platform |
 | [`tokyonight-cosmic-astronaut-black.png`](backgrounds/tokyonight-cosmic-astronaut-black.png) | 7168x4032 | The COSMIC astronaut, blue suit and red tubes on black. The one in the screenshot, and the image the Firefox palette was sampled from |
 
 Settings → Wallpaper → Add image → a file from `backgrounds/`.
