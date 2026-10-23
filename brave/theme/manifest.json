@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Cosmic Night",
+  "version": "1.0",
+  "description": "True-black theme drawn from the COSMIC artwork: blue icons, one lime accent.",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [0, 0, 0],
+      "frame_inactive": [0, 0, 0],
+      "frame_incognito": [0, 0, 0],
+      "frame_incognito_inactive": [0, 0, 0],
+      "background_tab": [0, 0, 0],
+      "background_tab_inactive": [0, 0, 0],
+      "background_tab_incognito": [0, 0, 0],
+      "background_tab_incognito_inactive": [0, 0, 0],
+      "toolbar": [13, 15, 22],
+      "tab_text": [168, 236, 97],
+      "tab_background_text": [121, 163, 247],
+      "tab_background_text_inactive": [121, 163, 247],
+      "tab_background_text_incognito": [121, 163, 247],
+      "tab_background_text_incognito_inactive": [121, 163, 247],
+      "bookmark_text": [195, 208, 245],
+      "toolbar_button_icon": [121, 163, 247],
+      "omnibox_background": [5, 6, 10],
+      "omnibox_text": [195, 208, 245],
+      "ntp_background": [0, 0, 0],
+      "ntp_text": [195, 208, 245],
+      "ntp_link": [168, 236, 97]
+    }
+  }
+}

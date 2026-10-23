@@ -3,7 +3,7 @@
 # COSMIC · Tokyo Night
 
 Pop!_OS 24.04 on COSMIC in Tokyo Night navy, blue and lime: desktop, terminal,
-shell, editor, Firefox, cursor, wallpapers.
+shell, editor, Firefox, Brave, cursor, wallpapers.
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-48B9C7?style=for-the-badge&logo=popos&logoColor=white)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-ff6b35?style=for-the-badge)
@@ -67,6 +67,9 @@ cooler than the rest of the rice.
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the astronaut on the bare desktop
 ├── backgrounds/                 # wallpapers, tokyonight-<subject>.png (see Icons and wallpaper)
+├── brave
+│   ├── theme                    # Chromium theme (manifest + icons), Load unpacked
+│   └── README.md
 ├── btop
 │   └── TokyoNight.theme         # btop colour theme
 ├── claude-desktop
@@ -207,6 +210,20 @@ Two layers:
 Fully restart Firefox afterward: `userChrome.css` is only parsed at startup.
 
 Full details and CSS gotchas in [`firefox/README.md`](firefox/README.md).
+
+---
+
+## Brave
+
+`brave/theme` is a Chromium theme with the Firefox theme's colours: true-black
+frame, navy toolbar, blue icons and inactive tabs, lime on the active tab.
+Brave, Chrome, Chromium and Edge take it, and it loads straight from the
+clone, so no Chrome Web Store or Google account is needed:
+
+`brave://extensions` → **Developer mode** → **Load unpacked** → `brave/theme`
+
+Leave the clone in place, Brave keeps reading the folder. Colours, limits and
+packing a `.crx`: [`brave/README.md`](brave/README.md).
 
 ---
 
@@ -469,6 +486,8 @@ cd cosmic-tokyonight-theme
 
 # firefox stylesheets (optional)
 ./firefox/install.sh
+
+# brave: brave://extensions → Developer mode → Load unpacked → brave/theme
 
 # claude desktop (claude-desktop-extra), then Ctrl+Shift+T
 ./claude-desktop/install.sh
