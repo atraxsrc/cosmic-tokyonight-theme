@@ -66,6 +66,7 @@ cooler than the rest of the rice.
 .
 ├── assets
 │   ├── cursors/                 # cursor previews
+│   ├── cosmic-term/             # scheme previews for cosmic-term/README.md
 │   ├── palette.png              # the 16 terminal colours, under the title
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the astronaut on the bare desktop
@@ -191,6 +192,11 @@ The desktop `.ron` does not colour ANSI text.
 
 If a profile is set as default, set the scheme on that profile too or the
 dropdown will look like it did nothing.
+
+If storm grey is not the plain text you want, there are five other variants
+with the same ANSI colours, from Muted ![#737AA2](https://placehold.co/12x12/737aa2/737aa2.png) `#737AA2` to
+Pale ![#C4CFF4](https://placehold.co/12x12/c4cff4/c4cff4.png) `#C4CFF4`. Previews and which to
+pick: [`cosmic-term/README.md`](cosmic-term/README.md).
 
 ---
 
