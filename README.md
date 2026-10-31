@@ -2,6 +2,8 @@
 
 # COSMIC · Tokyo Night
 
+![Tokyo Night palette](assets/palette.png)
+
 Pop!_OS 24.04 on COSMIC in Tokyo Night navy, blue and lime: desktop, terminal,
 shell, editor, Firefox, Brave, cursor, wallpapers.
 
@@ -64,6 +66,7 @@ cooler than the rest of the rice.
 .
 ├── assets
 │   ├── cursors/                 # cursor previews
+│   ├── palette.png              # the 16 terminal colours, under the title
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the astronaut on the bare desktop
 ├── backgrounds/                 # wallpapers, tokyonight-<subject>.png (see Icons and wallpaper)
