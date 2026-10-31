@@ -453,8 +453,7 @@ sushi switch, geisha, JS mug and neon street from the Tokyo Night set, The Greek
 eagle and ink portrait, and three new scenes: city, panel and tower.
 Plus the astronaut on black, `tokyonight-cosmic-astronaut-black.png`: the one in the
 screenshot, and the image the Firefox palette was sampled from.
-The subjects come from [HANCORE-linux](https://github.com/HANCORE-linux) (MIT) and
-[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers); each was rendered again in this palette, then upscaled.
+The subjects come from [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers) (MIT); each was rendered again in this palette, then upscaled.
 The big Tokyo Night set stays in cool-wallpapers, folder
 [`tokyonight/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/tokyonight).
 
