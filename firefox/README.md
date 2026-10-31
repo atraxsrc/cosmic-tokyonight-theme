@@ -8,16 +8,16 @@ wallpaper, [`tokyonight-cosmic-astronaut-black.png`](../backgrounds/tokyonight-c
 
 | Hex       | Role                       | Source in the wallpaper |
 |-----------|----------------------------|-------------------------|
-| `#000000` | Frame, new tab             | Space background        |
-| `#171b23` | Panels, active tab, menus  | Shadow tone             |
-| `#0d0f16` | Toolbar                    | Lifted panel            |
-| `#05060a` | URL bar field              | Deepest black           |
-| `#79a3f7` | Borders, icons, selection  | Armor plating           |
-| `#a8ec61` | Focus ring, active tab line| Visor strip             |
-| `#e04c5d` | Loading, attention         | Under-suit red          |
-| `#3a3946` | Separators                 | Mech detail grey        |
-| `#7d8fae` | Muted text                 | Mid shadow              |
-| `#c3d0f5` | Body text                  | -                       |
+| ![#000000](https://placehold.co/12x12/000000/000000.png) `#000000` | Frame, new tab             | Space background        |
+| ![#171b23](https://placehold.co/12x12/171b23/171b23.png) `#171b23` | Panels, active tab, menus  | Shadow tone             |
+| ![#0d0f16](https://placehold.co/12x12/0d0f16/0d0f16.png) `#0d0f16` | Toolbar                    | Lifted panel            |
+| ![#05060a](https://placehold.co/12x12/05060a/05060a.png) `#05060a` | URL bar field              | Deepest black           |
+| ![#79a3f7](https://placehold.co/12x12/79a3f7/79a3f7.png) `#79a3f7` | Borders, icons, selection  | Armor plating           |
+| ![#a8ec61](https://placehold.co/12x12/a8ec61/a8ec61.png) `#a8ec61` | Focus ring, active tab line| Visor strip             |
+| ![#e04c5d](https://placehold.co/12x12/e04c5d/e04c5d.png) `#e04c5d` | Loading, attention         | Under-suit red          |
+| ![#3a3946](https://placehold.co/12x12/3a3946/3a3946.png) `#3a3946` | Separators                 | Mech detail grey        |
+| ![#7d8fae](https://placehold.co/12x12/7d8fae/7d8fae.png) `#7d8fae` | Muted text                 | Mid shadow              |
+| ![#c3d0f5](https://placehold.co/12x12/c3d0f5/c3d0f5.png) `#c3d0f5` | Body text                  | -                       |
 
 ## Structure
 

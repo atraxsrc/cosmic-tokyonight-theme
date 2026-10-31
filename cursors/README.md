@@ -6,12 +6,12 @@ rice's icon colours: one per folder colour of the
 [Cosmic-TokyoNight](https://github.com/atraxsrc/cosmic-icon-themes) icon pack, **Blue**, **Purple**, **Green**, **Dark**.
 All patched so they work in COSMIC's own apps.
 
-| Variant | Preview | Body | Contrast on `#1A1B26` | Goes with |
+| Variant | Preview | Body | Contrast on ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26` | Goes with |
 | ------- | ------- | ---- | ------------------- | --------- |
-| **Blue** (default) | ![](../assets/cursors/Oxygen-TokyoNight-Blue.png) | `#7AA2F7` | 6.8:1 | Blue folders |
-| **Purple** | ![](../assets/cursors/Oxygen-TokyoNight-Purple.png) | `#BB9AF7` | 7.4:1 | Purple folders |
-| **Green** | ![](../assets/cursors/Oxygen-TokyoNight-Green.png) | `#9ECE6A` | 9.4:1 | Green folders |
-| **Dark** | ![](../assets/cursors/Oxygen-TokyoNight-Dark.png) | `#292E42` | 1.3:1 | Dark folders |
+| **Blue** (default) | ![](../assets/cursors/Oxygen-TokyoNight-Blue.png) | ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7` | 6.8:1 | Blue folders |
+| **Purple** | ![](../assets/cursors/Oxygen-TokyoNight-Purple.png) | ![#BB9AF7](https://placehold.co/12x12/bb9af7/bb9af7.png) `#BB9AF7` | 7.4:1 | Purple folders |
+| **Green** | ![](../assets/cursors/Oxygen-TokyoNight-Green.png) | ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` | 9.4:1 | Green folders |
+| **Dark** | ![](../assets/cursors/Oxygen-TokyoNight-Dark.png) | ![#292E42](https://placehold.co/12x12/292e42/292e42.png) `#292E42` | 1.3:1 | Dark folders |
 
 Each variant is a normal folder here (`Oxygen-TokyoNight-<Variant>/index.theme` + `cursors/`),
 already fixed for COSMIC. Nothing is downloaded at install time.

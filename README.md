@@ -20,22 +20,22 @@ shell, editor, Firefox, Brave, cursor, wallpapers.
 
 Tokyo Night Dark, the low-contrast navy palette from the
 [VS Code theme](https://github.com/tokyo-night/tokyo-night-vscode-theme) of the
-same name. Contrast is measured on the window background `#1A1B26`.
+same name. Contrast is measured on the window background ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26`.
 
 | Role | Color | Hex | Contrast |
 |------|-------|-----|----------|
-| Background | ![#1a1b26](https://placehold.co/12x12/1a1b26/1a1b26.png) Dark navy | `#1A1B26` | |
-| Containers | ![#24283b](https://placehold.co/12x12/24283b/24283b.png) Storm / Highlight | `#24283B` / `#292E42` | |
-| Text | ![#c0caf5](https://placehold.co/12x12/c0caf5/c0caf5.png) Soft white | `#C0CAF5` | 10.6:1 |
-| Accent | ![#7aa2f7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) Blue | `#7AA2F7` | 6.8:1 |
-| Cyan | ![#7dcfff](https://placehold.co/12x12/7dcfff/7dcfff.png) Sky | `#7DCFFF` | 10.0:1 |
-| Purple | ![#bb9af7](https://placehold.co/12x12/bb9af7/bb9af7.png) Lavender | `#BB9AF7` | 7.4:1 |
-| Success | ![#9ece6a](https://placehold.co/12x12/9ece6a/9ece6a.png) Green | `#9ECE6A` | 9.4:1 |
-| Warning | ![#e0af68](https://placehold.co/12x12/e0af68/e0af68.png) Amber | `#E0AF68` | 8.5:1 |
-| Orange | ![#ff9e64](https://placehold.co/12x12/ff9e64/ff9e64.png) Orange | `#FF9E64` | 8.4:1 |
-| Error | ![#f7768e](https://placehold.co/12x12/f7768e/f7768e.png) Rose | `#F7768E` | 6.5:1 |
-| Muted | ![#737aa2](https://placehold.co/12x12/737aa2/737aa2.png) Dark 5 | `#737AA2` | 4.1:1 |
-| Comment | ![#565f89](https://placehold.co/12x12/565f89/565f89.png) Comment | `#565F89` | 2.8:1 |
+| Background | ![#1a1b26](https://placehold.co/12x12/1a1b26/1a1b26.png) Dark navy | ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26` | |
+| Containers | ![#24283b](https://placehold.co/12x12/24283b/24283b.png) Storm / Highlight | ![#24283B](https://placehold.co/12x12/24283b/24283b.png) `#24283B` / ![#292E42](https://placehold.co/12x12/292e42/292e42.png) `#292E42` | |
+| Text | ![#c0caf5](https://placehold.co/12x12/c0caf5/c0caf5.png) Soft white | ![#C0CAF5](https://placehold.co/12x12/c0caf5/c0caf5.png) `#C0CAF5` | 10.6:1 |
+| Accent | ![#7aa2f7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) Blue | ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7` | 6.8:1 |
+| Cyan | ![#7dcfff](https://placehold.co/12x12/7dcfff/7dcfff.png) Sky | ![#7DCFFF](https://placehold.co/12x12/7dcfff/7dcfff.png) `#7DCFFF` | 10.0:1 |
+| Purple | ![#bb9af7](https://placehold.co/12x12/bb9af7/bb9af7.png) Lavender | ![#BB9AF7](https://placehold.co/12x12/bb9af7/bb9af7.png) `#BB9AF7` | 7.4:1 |
+| Success | ![#9ece6a](https://placehold.co/12x12/9ece6a/9ece6a.png) Green | ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` | 9.4:1 |
+| Warning | ![#e0af68](https://placehold.co/12x12/e0af68/e0af68.png) Amber | ![#E0AF68](https://placehold.co/12x12/e0af68/e0af68.png) `#E0AF68` | 8.5:1 |
+| Orange | ![#ff9e64](https://placehold.co/12x12/ff9e64/ff9e64.png) Orange | ![#FF9E64](https://placehold.co/12x12/ff9e64/ff9e64.png) `#FF9E64` | 8.4:1 |
+| Error | ![#f7768e](https://placehold.co/12x12/f7768e/f7768e.png) Rose | ![#F7768E](https://placehold.co/12x12/f7768e/f7768e.png) `#F7768E` | 6.5:1 |
+| Muted | ![#737aa2](https://placehold.co/12x12/737aa2/737aa2.png) Dark 5 | ![#737AA2](https://placehold.co/12x12/737aa2/737aa2.png) `#737AA2` | 4.1:1 |
+| Comment | ![#565f89](https://placehold.co/12x12/565f89/565f89.png) Comment | ![#565F89](https://placehold.co/12x12/565f89/565f89.png) `#565F89` | 2.8:1 |
 
 Comments sit deliberately low, as in the original theme. Everything you read
 as text is 6.5:1 or better.
@@ -48,13 +48,13 @@ cooler than the rest of the rice.
 
 | Role | Color | Hex |
 |------|-------|-----|
-| Background | ![#000000](https://placehold.co/12x12/000000/000000.png) True black | `#000000` |
-| Panels | ![#171b23](https://placehold.co/12x12/171b23/171b23.png) Shadow | `#171B23` |
-| Blue | ![#79a3f7](https://placehold.co/12x12/79a3f7/79a3f7.png) Armor | `#79A3F7` |
-| Lime | ![#a8ec61](https://placehold.co/12x12/a8ec61/a8ec61.png) Visor | `#A8EC61` |
-| Red | ![#e04c5d](https://placehold.co/12x12/e04c5d/e04c5d.png) Under-suit | `#E04C5D` |
-| Grey | ![#3a3946](https://placehold.co/12x12/3a3946/3a3946.png) Mech detail | `#3A3946` |
-| Foreground | ![#c3d0f5](https://placehold.co/12x12/c3d0f5/c3d0f5.png) Soft white | `#C3D0F5` |
+| Background | ![#000000](https://placehold.co/12x12/000000/000000.png) True black | ![#000000](https://placehold.co/12x12/000000/000000.png) `#000000` |
+| Panels | ![#171b23](https://placehold.co/12x12/171b23/171b23.png) Shadow | ![#171B23](https://placehold.co/12x12/171b23/171b23.png) `#171B23` |
+| Blue | ![#79a3f7](https://placehold.co/12x12/79a3f7/79a3f7.png) Armor | ![#79A3F7](https://placehold.co/12x12/79a3f7/79a3f7.png) `#79A3F7` |
+| Lime | ![#a8ec61](https://placehold.co/12x12/a8ec61/a8ec61.png) Visor | ![#A8EC61](https://placehold.co/12x12/a8ec61/a8ec61.png) `#A8EC61` |
+| Red | ![#e04c5d](https://placehold.co/12x12/e04c5d/e04c5d.png) Under-suit | ![#E04C5D](https://placehold.co/12x12/e04c5d/e04c5d.png) `#E04C5D` |
+| Grey | ![#3a3946](https://placehold.co/12x12/3a3946/3a3946.png) Mech detail | ![#3A3946](https://placehold.co/12x12/3a3946/3a3946.png) `#3A3946` |
+| Foreground | ![#c3d0f5](https://placehold.co/12x12/c3d0f5/c3d0f5.png) Soft white | ![#C3D0F5](https://placehold.co/12x12/c3d0f5/c3d0f5.png) `#C3D0F5` |
 
 ---
 
@@ -134,14 +134,14 @@ cooler than the rest of the rice.
 Settings → Desktop → Appearance → **Dark** → **Import** → `cosmic/TokyoNight.ron`
 
 The whole palette is Tokyo Night, in the same format as the DarkGold baseline:
-background `#1A1B26`, containers `#24283B` / `#292E42`, navy neutrals from
-`#3B4261` to `#C0CAF5` (so frosted glass tints navy, not grey), accent blue
-`#7AA2F7`, success `#9ECE6A`, warning `#E0AF68`, error `#F7768E`. Text tint
-is pinned to `#C7D1FD`, a touch brighter than Tokyo Night's `#C0CAF5` so it
+background ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26`, containers ![#24283B](https://placehold.co/12x12/24283b/24283b.png) `#24283B` / ![#292E42](https://placehold.co/12x12/292e42/292e42.png) `#292E42`, navy neutrals from
+![#3B4261](https://placehold.co/12x12/3b4261/3b4261.png) `#3B4261` to ![#C0CAF5](https://placehold.co/12x12/c0caf5/c0caf5.png) `#C0CAF5` (so frosted glass tints navy, not grey), accent blue
+![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7`, success ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A`, warning ![#E0AF68](https://placehold.co/12x12/e0af68/e0af68.png) `#E0AF68`, error ![#F7768E](https://placehold.co/12x12/f7768e/f7768e.png) `#F7768E`. Text tint
+is pinned to ![#C7D1FD](https://placehold.co/12x12/c7d1fd/c7d1fd.png) `#C7D1FD`, a touch brighter than Tokyo Night's ![#C0CAF5](https://placehold.co/12x12/c0caf5/c0caf5.png) `#C0CAF5` so it
 stays crisp on the glass.
 
 Frosted glass is on at `frosted: Low` with an opacity table of 0.66 to 0.96,
-tinted with the palette's middle neutral `#545C7E`, the same glass as every
+tinted with the palette's middle neutral ![#545C7E](https://placehold.co/12x12/545c7e/545c7e.png) `#545C7E`, the same glass as every
 other rice. It covers windows, panel, applets and system UI (maximized apps
 stay solid), and corners are squared (`radius_*: 2.0`), the same as the
 DarkGold baseline.
@@ -150,7 +150,7 @@ survive a theme switch. Export from Appearance if you tweak it so you do not
 lose the changes.
 
 **Known COSMIC bug:** moving the frosted glass opacity / thickness sliders can
-reset `text_tint` to `#FFFFFF`. If your text turns white, re-import
+reset `text_tint` to ![#FFFFFF](https://placehold.co/12x12/ffffff/ffffff.png) `#FFFFFF`. If your text turns white, re-import
 `cosmic/TokyoNight.ron`; it carries the tint. Upstream fix proposed in
 [libcosmic#1450](https://github.com/pop-os/libcosmic/pull/1450), not merged.
 
@@ -428,7 +428,7 @@ Previews, what the script touches, how to undo it and how the colours are made:
 Icons: **Cosmic-TokyoNight**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-four colors: **Blue** `#7AA2F7` (default), **Purple** `#BB9AF7`, **Green** `#9ECE6A` and **Dark** `#292E42` with blue symbols.
+four colors: **Blue** ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7` (default), **Purple** ![#BB9AF7](https://placehold.co/12x12/bb9af7/bb9af7.png) `#BB9AF7`, **Green** ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` and **Dark** ![#292E42](https://placehold.co/12x12/292e42/292e42.png) `#292E42` with blue symbols.
 
 ![Cosmic-TokyoNight folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-TokyoNight.png)
 
