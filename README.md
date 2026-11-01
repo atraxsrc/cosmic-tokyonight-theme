@@ -71,6 +71,13 @@ cooler than the rest of the rice.
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the astronaut on the bare desktop
 ├── backgrounds/                 # wallpapers, tokyonight-<subject>.png (see Icons and wallpaper)
+├── alacritty
+│   ├── tokyonight.toml          # Alacritty colour scheme
+│   └── install.sh
+├── bat
+│   ├── TokyoNight.tmTheme       # bat syntax theme (delta uses it too)
+│   ├── config                   # --theme="TokyoNight"
+│   └── install.sh
 ├── brave
 │   ├── theme                    # Chromium theme (manifest + icons), Load unpacked
 │   └── README.md
@@ -92,6 +99,21 @@ cooler than the rest of the rice.
 │   └── README.md
 ├── docs
 │   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
+├── delta
+│   ├── tokyonight.gitconfig     # delta (git pager) colours, [include] it from ~/.gitconfig
+│   └── install.sh
+├── discord
+│   ├── cosmic-tokyo-night.theme.css # Vencord / Vesktop theme, Tokyo Night (dark) + Tokyo Day (light)
+│   └── install.sh
+├── ghostty
+│   ├── TokyoNight               # Ghostty theme
+│   └── install.sh
+├── gtk
+│   ├── tokyonight.css           # GTK 3 / 4 named colours for non-COSMIC apps
+│   └── install.sh
+├── helix
+│   ├── tokyonight.toml          # Helix theme
+│   └── install.sh
 ├── icons
 │   └── install.sh               # Cosmic-TokyoNight icon pack from cosmic-icon-themes
 ├── fastfetch
@@ -107,11 +129,26 @@ cooler than the rest of the rice.
 │   │   └── userContent.css      # new tab page accent colour
 │   ├── install.sh               # copies chrome/ into the default profile
 │   └── README.md
+├── kitty
+│   ├── TokyoNight.conf          # kitty colour scheme
+│   └── install.sh
+├── lazygit
+│   ├── tokyonight.yml           # lazygit colours only, stacked on your config.yml
+│   └── install.sh
 ├── lsd
 │   ├── config.yaml              # theme: custom
 │   ├── colors.yaml              # permission / size / date / git columns
 │   └── install.sh
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
+├── obsidian
+│   ├── cosmic-tokyo-night.css   # CSS snippet, Tokyo Night (dark) + Tokyo Day (light)
+│   └── install.sh
+├── qt
+│   ├── TokyoNight.conf          # qt5ct / qt6ct colour scheme
+│   └── install.sh
+├── starship
+│   ├── starship.toml            # prompt, palette colours, clock on the right
+│   └── install.sh
 ├── telegram
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
 │   ├── cosmic-tokyonight.tdesktop-theme  # built theme, open this in Telegram
@@ -124,8 +161,11 @@ cooler than the rest of the rice.
 ├── scripts
 │   ├── update_system.sh         # nala + flatpak, Tokyo Night ANSI
 │   └── switch.sh                # make this the active rice (see Switching rice)
+├── wezterm
+│   ├── tokyonight.lua           # WezTerm colours, config.colors = require("tokyonight")
+│   └── install.sh
 ├── zsh
-│   ├── tokyonight.zsh           # LS_COLORS, highlighting colours, aliases, starship
+│   ├── tokyonight.zsh           # LS_COLORS, highlighting colours, aliases, starship, lazygit
 │   └── install.sh
 ├── LICENSE
 └── README.md
@@ -342,12 +382,125 @@ Makes this the active rice, coming from any other `cosmic-*-theme` rice. See
 Need a [Nerd Font](https://www.nerdfonts.com/) in the terminal for the icons
 (Maple Mono NFM in the baseline above).
 
+### kitty, Alacritty, WezTerm, Ghostty
+
+The COSMIC Terminal scheme for other terminals, one file each with the same
+sixteen ANSI colours, text in ![#A9B1D6](https://placehold.co/12x12/a9b1d6/a9b1d6.png) `#A9B1D6`, the cursor in ![#A9B1D6](https://placehold.co/12x12/a9b1d6/a9b1d6.png) `#A9B1D6` and the
+selection on ![#4E5576](https://placehold.co/12x12/4e5576/4e5576.png) `#4E5576`. Each installer copies the file next to that terminal's
+config and backs up what it replaces; the one include line you add is
+printed, and is in the comment at the top of each file:
+
+```bash
+./kitty/install.sh        # ~/.config/kitty/themes/TokyoNight.conf       kitty.conf:     include themes/TokyoNight.conf
+./alacritty/install.sh    # ~/.config/alacritty/themes/tokyonight.toml   alacritty.toml: [general] import = ["~/.config/alacritty/themes/tokyonight.toml"]
+./wezterm/install.sh      # ~/.config/wezterm/tokyonight.lua             wezterm.lua:    config.colors = require("tokyonight")
+./ghostty/install.sh      # ~/.config/ghostty/themes/TokyoNight          config:         theme = TokyoNight
+```
+
+Ghostty and WezTerm can follow COSMIC's Dark / Light toggle once the Tokyo Day
+half is installed from its repo as well: `theme = dark:TokyoNight,light:TokyoDay` in
+Ghostty, and in WezTerm
+
+```lua
+local dark = (wezterm.gui and wezterm.gui.get_appearance() or "Dark"):find("Dark")
+config.colors = require(dark and "tokyonight" or "tokyoday")
+```
+
+kitty and Alacritty have no such switch; include the other file instead.
+
+### starship
+
+`starship/starship.toml` is close to the defaults with the palette declared
+once as `[palettes.tokyonight]` and used by name: the directory in ![#A9B1D6](https://placehold.co/12x12/a9b1d6/a9b1d6.png) `#A9B1D6`,
+the branch in ![#E9BD64](https://placehold.co/12x12/e9bd64/e9bd64.png) `#E9BD64`, ![#E0AF68](https://placehold.co/12x12/e0af68/e0af68.png) `#E0AF68` for a dirty tree, a ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` prompt
+character that turns ![#F7768E](https://placehold.co/12x12/f7768e/f7768e.png) `#F7768E` after a failed command, a dim `HH:MM` clock on
+the right. Modules it does not style keep their defaults, which use the ANSI
+slots the COSMIC Terminal scheme colours. `zsh/tokyonight.zsh` already runs
+`starship init`. `install.sh` backs up any existing `~/.config/starship.toml`
+to `starship.toml.bak`.
+
+```bash
+./starship/install.sh
+```
+
+### bat
+
+`bat/TokyoNight.tmTheme` is a syntax theme coloured the way Neovim is in this
+rice: keywords in ![#BB9AF7](https://placehold.co/12x12/bb9af7/bb9af7.png) `#BB9AF7`, strings in ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A`, functions in ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7`, numbers
+in ![#FF9E64](https://placehold.co/12x12/ff9e64/ff9e64.png) `#FF9E64`, types in ![#2AC3DE](https://placehold.co/12x12/2ac3de/2ac3de.png) `#2AC3DE`, imports and escapes in ![#7DCFFF](https://placehold.co/12x12/7dcfff/7dcfff.png) `#7DCFFF`, italic
+comments in ![#565F89](https://placehold.co/12x12/565f89/565f89.png) `#565F89`, on the editor background ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26`. `zsh/tokyonight.zsh`
+aliases `cat` to bat. `install.sh` copies the theme to `~/.config/bat/themes/`,
+rebuilds bat's cache so bat and delta can find it, and sets `--theme="TokyoNight"`
+in `~/.config/bat/config` (backup in `config.bak`).
+
+```bash
+./bat/install.sh
+batcat README.md
+```
+
+### delta
+
+`delta/tokyonight.gitconfig` colours [delta](https://github.com/dandavison/delta),
+the git diff pager: removed lines in ![#F7768E](https://placehold.co/12x12/f7768e/f7768e.png) `#F7768E` and added lines in
+![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` on the container ![#24283B](https://placehold.co/12x12/24283b/24283b.png) `#24283B`, changed words on a solid block of
+those two colours with ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26` text, the same as Neovim's diff highlights;
+file names in ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7`, commit hashes in ![#E9BD64](https://placehold.co/12x12/e9bd64/e9bd64.png) `#E9BD64`, hunk headers in
+![#A9B1D6](https://placehold.co/12x12/a9b1d6/a9b1d6.png) `#A9B1D6` inside ![#646A83](https://placehold.co/12x12/646a83/646a83.png) `#646A83` boxes, line numbers. Code inside the diff
+uses the bat theme above, so install that first. `install.sh` copies the file
+to `~/.config/delta/` and prints the `[include]` to add to `~/.gitconfig`; it
+never edits that file.
+
+```bash
+./delta/install.sh
+```
+
+```ini
+# ~/.gitconfig
+[include]
+    path = ~/.config/delta/tokyonight.gitconfig
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+```
+
+### lazygit
+
+`lazygit/tokyonight.yml` holds only the `gui.theme` block: active border in
+![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7`, inactive borders in ![#646A83](https://placehold.co/12x12/646a83/646a83.png) `#646A83`, the selected line on ![#414868](https://placehold.co/12x12/414868/414868.png) `#414868`,
+![#E9BD64](https://placehold.co/12x12/e9bd64/e9bd64.png) `#E9BD64` and ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` marks for cherry-picked and base commits,
+unstaged changes in ![#F7768E](https://placehold.co/12x12/f7768e/f7768e.png) `#F7768E`, author names in ![#E9BD64](https://placehold.co/12x12/e9bd64/e9bd64.png) `#E9BD64`. lazygit reads one
+config file, so instead of replacing your `~/.config/lazygit/config.yml` the
+installer drops the theme beside it and `zsh/tokyonight.zsh` sets `LG_CONFIG_FILE`
+to both, your file first, so the colours win and your keybindings stay.
+
+```bash
+./lazygit/install.sh
+exec zsh
+```
+
+Without the zsh layer, export it yourself:
+`LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/tokyonight.yml"`.
+
+### Helix
+
+`helix/tokyonight.toml` is the Neovim colorscheme for [Helix](https://helix-editor.com/):
+same syntax roles, editor on ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26`, status line and popups on ![#24283B](https://placehold.co/12x12/24283b/24283b.png) `#24283B`,
+cursor and current line number in ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7`, the mode shown as a solid
+![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7` / ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` / ![#E9BD64](https://placehold.co/12x12/e9bd64/e9bd64.png) `#E9BD64` block. `install.sh` copies it to
+`~/.config/helix/themes/`.
+
+```bash
+./helix/install.sh
+# ~/.config/helix/config.toml:  theme = "tokyonight"
+```
+
 ### zsh
 
 `zsh/tokyonight.zsh` is the rice part of the shell only: `LS_COLORS` (also
 used by lsd for file names and by the completion menu), Tokyo Night colours
-for zsh-autosuggestions and zsh-syntax-highlighting, lsd / bat / nvim aliases
-and the starship prompt. Your own `~/.zshrc` stays private and sources it.
+for zsh-autosuggestions and zsh-syntax-highlighting, lsd / bat / nvim aliases,
+the lazygit theme file and the starship prompt. Your own `~/.zshrc` stays private and sources it.
 
 Needs zsh + [oh-my-zsh](https://ohmyz.sh/). `install.sh` clones the two
 plugins if missing and appends one `source` line to `~/.zshrc` (backup in
@@ -412,6 +565,90 @@ mkdir -p ~/.config/btop/themes
 cp btop/TokyoNight.theme ~/.config/btop/themes/
 # btop → Esc → Options → Color theme → TokyoNight
 ```
+
+---
+
+## GTK and Qt apps
+
+COSMIC colours GTK apps itself when Appearance → **Apply theme to GNOME apps**
+is on (the baseline config turns it on). `gtk/tokyonight.css` is the same palette
+pinned by hand for GTK 3 and GTK 4 / libadwaita apps: windows and lists on
+![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26`, cards, popovers and dialogs on ![#24283B](https://placehold.co/12x12/24283b/24283b.png) `#24283B`, text in ![#C0CAF5](https://placehold.co/12x12/c0caf5/c0caf5.png) `#C0CAF5`, selection
+and accent in ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7` with ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26` text on it, ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` for
+success and ![#E0AF68](https://placehold.co/12x12/e0af68/e0af68.png) `#E0AF68` for warnings. It only sets the named colours, so
+widgets keep their stock shapes, and it also works where COSMIC's toggle does
+not reach (another desktop, Flatpak apps given access to `~/.config/gtk-4.0`).
+
+```bash
+./gtk/install.sh
+```
+
+It copies the file to `~/.config/gtk-3.0/` and `~/.config/gtk-4.0/` and adds
+`@import url("tokyonight.css");` to `gtk.css` there, after COSMIC's own import so
+these colours win (backup in `gtk.css.bak`); another rice's import is
+commented out. Restart GTK apps.
+
+`qt/TokyoNight.conf` is a colour scheme for [qt5ct](https://github.com/desktop-app/qt5ct)
+/ [qt6ct](https://github.com/trialuser02/qt6ct): windows on ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26`, text
+fields and lists on ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26`, buttons and tooltips on ![#24283B](https://placehold.co/12x12/24283b/24283b.png) `#24283B`, text in
+![#C0CAF5](https://placehold.co/12x12/c0caf5/c0caf5.png) `#C0CAF5`, ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7` for the highlight and links, placeholders in ![#646A83](https://placehold.co/12x12/646a83/646a83.png) `#646A83`,
+disabled text in ![#565F89](https://placehold.co/12x12/565f89/565f89.png) `#565F89`.
+
+```bash
+./qt/install.sh
+# qt6ct → Appearance → Color scheme → TokyoNight, Palette: Custom → Apply
+```
+
+Qt apps read it with `QT_QPA_PLATFORMTHEME=qt6ct` (or `qt5ct`) in the
+environment; `~/.config/environment.d/` or your `~/.zshrc` is the place.
+
+Text and secondary text read at 6.4:1 or better on the window, container and
+field colours; disabled, placeholder and dim text, like comments elsewhere in
+the rice, at 2.4:1.
+
+---
+
+## Obsidian
+
+`obsidian/cosmic-tokyo-night.css` is a CSS snippet with both halves of the pair:
+Tokyo Night in dark mode, Tokyo Day in light mode, so with Settings →
+Appearance → Base color scheme → **Adapt to system** Obsidian follows COSMIC's
+Dark / Light toggle. Editor on ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26`, sidebars on ![#24283B](https://placehold.co/12x12/24283b/24283b.png) `#24283B`, text in ![#C0CAF5](https://placehold.co/12x12/c0caf5/c0caf5.png) `#C0CAF5`,
+links and accent in ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7`, headings coloured like Neovim's
+(![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7` / ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7` / ![#2AC3DE](https://placehold.co/12x12/2ac3de/2ac3de.png) `#2AC3DE`), code and checkboxes in ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A`, tags
+in ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7`. The same file ships in cosmic-tokyoday-theme.
+
+```bash
+./obsidian/install.sh ~/path/to/vault
+# Settings → Appearance → CSS snippets → cosmic-tokyo-night
+```
+
+It copies the file into the vault's `.obsidian/snippets/`. Snippets are per
+vault, so run it once per vault.
+
+---
+
+## Discord
+
+`discord/cosmic-tokyo-night.theme.css` is a theme for [Vencord](https://vencord.dev/)
+and [Vesktop](https://github.com/Vencord/Vesktop), colours only: chat on
+![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26`, sidebars and inputs on ![#24283B](https://placehold.co/12x12/24283b/24283b.png) `#24283B`, server list on ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26`, text in
+![#C0CAF5](https://placehold.co/12x12/c0caf5/c0caf5.png) `#C0CAF5`, channel names in ![#A9B1D6](https://placehold.co/12x12/a9b1d6/a9b1d6.png) `#A9B1D6`, accent, mentions and links in
+![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7`, ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` for online and positive, ![#E0AF68](https://placehold.co/12x12/e0af68/e0af68.png) `#E0AF68` for
+warnings. The light half is Tokyo Day and the dark half Tokyo Night, so
+with Appearance → Theme → **Sync with computer** it follows COSMIC's toggle.
+The same file ships in cosmic-tokyoday-theme.
+
+```bash
+./discord/install.sh
+# Settings → Vencord → Themes → Cosmic Tokyo Night
+```
+
+It copies the file into `~/.config/Vencord/themes/` and
+`~/.config/vesktop/themes/`, whichever exist. Discord renames its CSS
+variables now and then; the file sets both the long-standing names and the
+2025 `--bg-*` set. Text on the surfaces is 6.4:1 or better; the text on
+Discord's own accent-coloured buttons stays its white, at 2.5:1.
 
 ---
 
@@ -513,6 +750,26 @@ cd cosmic-tokyonight-theme
 ./nvim/install.sh
 mkdir -p ~/.config/btop/themes && cp btop/TokyoNight.theme ~/.config/btop/themes/
 
+./starship/install.sh
+./bat/install.sh
+./delta/install.sh          # then the [include] it prints, in ~/.gitconfig
+./lazygit/install.sh
+./helix/install.sh          # then theme = "tokyonight" in helix/config.toml
+
+# other terminals, one include line each (see Terminal extras above)
+./kitty/install.sh
+./alacritty/install.sh
+./wezterm/install.sh
+./ghostty/install.sh
+
+# gtk + qt apps (see GTK and Qt apps above)
+./gtk/install.sh
+./qt/install.sh             # then qt6ct → Color scheme → TokyoNight
+
+# obsidian + discord, both halves in one file (see above)
+./obsidian/install.sh ~/path/to/vault
+./discord/install.sh
+
 # wallpaper
 # Settings → Wallpaper → Add image → a file from backgrounds/ (see Icons and wallpaper above)
 
@@ -544,8 +801,11 @@ It backs up every file it replaces, then:
   The terminal scheme and icon theme are only replaced when the current one is
   not already a Tokyo Night variant, so a dimmer text variant or another icon colour
   survives. Icons stay as they are until `./icons/install.sh` has run.
-- runs the fastfetch, lsd, Neovim and Claude Desktop installers and sets
-  btop's `color_theme`
+- runs the fastfetch, lsd, bat, starship, delta, lazygit, kitty, Alacritty,
+  WezTerm, Ghostty, Helix, GTK, Qt, Discord, Neovim and Claude Desktop
+  installers and sets btop's `color_theme`. The terminal, editor and Qt
+  installers only copy theme files; the include line you added once stays,
+  switch it by hand when the file name differs between rices
 - moves every other rice's LazyVim spec from `~/.config/nvim/lua/plugins/` to
   `~/.config/nvim/rice-off/` (LazyVim loads every spec there and the last
   colorscheme wins); your own specs stay
@@ -562,6 +822,7 @@ The GUI steps it cannot do are printed at the end:
 4. Settings → Wallpaper → a file from `backgrounds/`
 5. Claude Desktop: Ctrl+Shift+T → `cosmic-tokyo-night`, Appearance → Dark
 6. `exec zsh`, restart Neovim (`:Lazy clean` drops plugins only the old specs used)
+7. Obsidian: `./obsidian/install.sh <vault>`; delta: the `[include]` path in `~/.gitconfig`
 
 Skip 1 and 2 when that slot already holds Tokyo Night. The first time on this rice,
 run [Setup](#setup) once for the fonts, icons and cursor.
@@ -586,6 +847,14 @@ puts the Pop cursor back.
 | [lsd](https://github.com/lsd-rs/lsd) | `ls` with icons and colours |
 | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | System info |
 | [btop](https://github.com/aristocratos/btop) | Resource monitor |
+| [starship](https://starship.rs/) | Prompt |
+| [bat](https://github.com/sharkdp/bat) | `cat` with syntax highlighting |
+| [delta](https://github.com/dandavison/delta) | git diff pager |
+| [lazygit](https://github.com/jesseduffield/lazygit) | git TUI |
+| [Helix](https://helix-editor.com/) | Editor |
+| [kitty](https://sw.kovidgoyal.net/kitty/), [Alacritty](https://alacritty.org/), [WezTerm](https://wezterm.org/), [Ghostty](https://ghostty.org/) | Other terminals |
+| [qt6ct](https://github.com/trialuser02/qt6ct) | Qt colour scheme |
+| [Vencord](https://vencord.dev/) / [Vesktop](https://github.com/Vencord/Vesktop) | Discord theme host |
 | [nala](https://gitlab.com/volian/nala) | Nicer apt frontend for the update script |
 | [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes) | Icon pack (Cosmic-TokyoNight), recolored from [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa) |
 | [Oxygen-Cursors](https://github.com/wo2ni/Oxygen-Cursors) | Cursor, recoloured to the icon colours |

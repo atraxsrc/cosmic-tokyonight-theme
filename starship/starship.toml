@@ -1,0 +1,76 @@
+"$schema" = "https://starship.rs/config-schema.json"
+# TokyoNight starship prompt, part of cosmic-tokyonight-theme (MIT).
+# Close to the defaults, coloured from the palette: secondary-text directory,
+# branch in the yellow slot, the warning colour for a dirty tree, a success
+# prompt character (the error colour after a failed command), HH:MM clock on
+# the right. Modules without a style here keep their defaults, which use the
+# ANSI slots the COSMIC Terminal scheme already colours.
+
+format = "$all"
+right_format = "$time"
+palette = "tokyonight"
+
+[palettes.tokyonight]
+accent = "#7AA2F7"
+warning = "#E0AF68"
+success = "#9ECE6A"
+error = "#F7768E"
+third = "#E9BD64"
+secondary = "#A9B1D6"
+faint = "#646A83"
+dim = "#565F89"
+fg = "#A9B1D6"
+
+[character]
+success_symbol = "[❯](bold success)"
+error_symbol = "[❯](bold error)"
+vimcmd_symbol = "[❮](bold third)"
+
+[directory]
+style = "bold secondary"
+read_only_style = "error"
+repo_root_style = "bold third"
+
+[git_branch]
+style = "bold third"
+
+[git_commit]
+style = "bold third"
+
+[git_state]
+style = "bold warning"
+
+[git_status]
+style = "warning"
+
+[git_metrics]
+added_style = "success"
+deleted_style = "error"
+
+[username]
+style_user = "success"
+style_root = "bold error"
+
+[hostname]
+style = "success"
+
+[cmd_duration]
+style = "faint"
+
+[status]
+style = "bold error"
+
+[sudo]
+style = "bold warning"
+
+[jobs]
+style = "warning"
+
+[dart]
+disabled = true
+
+[time]
+disabled = false
+time_format = "%H:%M"
+format = "[$time]($style)"
+style = "dim"
