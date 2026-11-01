@@ -148,7 +148,7 @@ cooler than the rest of the rice.
 │   ├── TokyoNight.conf          # qt5ct / qt6ct colour scheme
 │   └── install.sh
 ├── starship
-│   ├── starship.toml            # prompt, palette colours, clock on the right
+│   ├── starship.toml            # prompt, palette colours
 │   └── install.sh
 ├── telegram
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
@@ -414,8 +414,7 @@ kitty and Alacritty have no such switch; include the other file instead.
 `starship/starship.toml` is close to the defaults with the palette declared
 once as `[palettes.tokyonight]` and used by name: the directory in ![#A9B1D6](https://placehold.co/12x12/a9b1d6/a9b1d6.png) `#A9B1D6`,
 the branch in ![#E9BD64](https://placehold.co/12x12/e9bd64/e9bd64.png) `#E9BD64`, ![#E0AF68](https://placehold.co/12x12/e0af68/e0af68.png) `#E0AF68` for a dirty tree, a ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` prompt
-character that turns ![#F7768E](https://placehold.co/12x12/f7768e/f7768e.png) `#F7768E` after a failed command, a dim `HH:MM` clock on
-the right. Modules it does not style keep their defaults, which use the ANSI
+character that turns ![#F7768E](https://placehold.co/12x12/f7768e/f7768e.png) `#F7768E` after a failed command. Modules it does not style keep their defaults, which use the ANSI
 slots the COSMIC Terminal scheme colours. `zsh/tokyonight.zsh` already runs
 `starship init`. `install.sh` backs up any existing `~/.config/starship.toml`
 to `starship.toml.bak`.
