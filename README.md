@@ -220,7 +220,7 @@ reset `text_tint` to ![#FFFFFF](https://placehold.co/12x12/ffffff/ffffff.png) `#
 | Where | Setting |
 |-------|---------|
 | Fonts | Interface `Maple Mono Normal`, monospace `Maple Mono Normal NFM` |
-| Icons | Cosmic-TokyoNight-Blue |
+| Icons | Cosmic-TokyoNight-Dark |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Tokyo Night |
 
@@ -705,13 +705,13 @@ Previews, what the script touches, how to undo it and how the colours are made:
 Icons: **Cosmic-TokyoNight**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-four colors: **Blue** ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7` (default), **Purple** ![#BB9AF7](https://placehold.co/12x12/bb9af7/bb9af7.png) `#BB9AF7`, **Green** ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` and **Dark** ![#292E42](https://placehold.co/12x12/292e42/292e42.png) `#292E42` with blue symbols.
+four colors: **Blue** ![#7AA2F7](https://placehold.co/12x12/7aa2f7/7aa2f7.png) `#7AA2F7`, **Purple** ![#BB9AF7](https://placehold.co/12x12/bb9af7/bb9af7.png) `#BB9AF7`, **Green** ![#9ECE6A](https://placehold.co/12x12/9ece6a/9ece6a.png) `#9ECE6A` and **Dark** ![#292E42](https://placehold.co/12x12/292e42/292e42.png) `#292E42` (default) with blue symbols.
 
 ![Cosmic-TokyoNight folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-TokyoNight.png)
 
 ```bash
-./icons/install.sh                   # Blue folders
-./icons/install.sh --variant Purple  # or Green, Dark
+./icons/install.sh                 # Dark folders
+./icons/install.sh --variant Blue  # or Purple, Green
 ```
 
 It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
