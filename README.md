@@ -180,6 +180,17 @@ cooler than the rest of the rice.
 
 Settings → Desktop → Appearance → **Dark** → **Import** → `cosmic/TokyoNight.ron`
 
+Or from a terminal in this folder, which takes the whole file:
+
+```bash
+cosmic-settings appearance import cosmic/TokyoNight.ron
+```
+
+Since the COSMIC builds after 1.11.0 the **Import** button keeps your current
+frosted glass (level, on/off per surface, opacity), gaps and active hint, and
+takes only the colours, corners, fonts and icons from the file. The terminal
+command applies this rice's frosted glass too, and so does `themebox flip`.
+
 The whole palette is Tokyo Night, in the same format as the DarkGold baseline:
 background ![#1A1B26](https://placehold.co/12x12/1a1b26/1a1b26.png) `#1A1B26`, containers ![#24283B](https://placehold.co/12x12/24283b/24283b.png) `#24283B` / ![#292E42](https://placehold.co/12x12/292e42/292e42.png) `#292E42`, navy neutrals from
 ![#3B4261](https://placehold.co/12x12/3b4261/3b4261.png) `#3B4261` to ![#C0CAF5](https://placehold.co/12x12/c0caf5/c0caf5.png) `#C0CAF5` (so frosted glass tints navy, not grey), accent blue
@@ -192,8 +203,8 @@ tinted with the palette's middle neutral ![#545C7E](https://placehold.co/12x12/5
 other rice. It covers windows, panel, applets and system UI (maximized apps
 stay solid), and corners are squared (`radius_*: 2.0`), the same as the
 DarkGold baseline.
-Adjust it on Appearance → Style → Frosted glass after import; those sliders
-survive a theme switch. Export from Appearance if you tweak it so you do not
+Adjust it on Appearance → Style → Frosted glass after import; the Import button keeps those
+sliders. Export from Appearance if you tweak it so you do not
 lose the changes.
 
 **Known COSMIC bug:** moving the frosted glass opacity / thickness sliders can
