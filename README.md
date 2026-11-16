@@ -162,8 +162,7 @@ cooler than the rest of the rice.
 │   ├── install.sh               # packs a .vsix, installs it with cursor --install-extension
 │   └── README.md
 ├── scripts
-│   ├── update_system.sh         # nala + flatpak, Tokyo Night ANSI
-│   └── switch.sh                # make this the active rice (see Switching rice)
+│   └── update_system.sh         # nala + flatpak, Tokyo Night ANSI
 ├── wezterm
 │   ├── tokyonight.lua           # WezTerm colours, config.colors = require("tokyonight")
 │   └── install.sh
@@ -378,15 +377,6 @@ chmod +x scripts/update_system.sh
 
 Don't run the whole script with `sudo`: `flatpak update` would then only
 update system-wide installs and skip your per-user Flatpaks.
-
-### `switch.sh`
-
-Makes this the active rice, coming from any other `cosmic-*-theme` rice. See
-[Switching rice](#switching-rice).
-
-```bash
-./scripts/switch.sh
-```
 
 ---
 
@@ -817,13 +807,13 @@ mkdir -p ~/.config/btop/themes && cp btop/TokyoNight.theme ~/.config/btop/themes
 
 The installers replace what they own (with a `*.bak` copy), but some things
 pile up instead: shell layers in `~/.zshrc`, LazyVim specs, the updater link and
-btop's theme setting. `scripts/switch.sh` makes Tokyo Night the active rice, coming
-from any other `cosmic-*-theme` rice, and tidies those up. Every rice repo ships
-the same script.
+btop's theme setting. [themebox](https://github.com/atraxsrc/themebox) makes
+Tokyo Night the active rice, coming from any other `cosmic-*-theme` rice, and
+tidies those up. It installs with one command, see its README.
 
 ```bash
-./scripts/switch.sh               # switch, icons included
-./scripts/switch.sh --keep-icons  # leave the current icon theme alone
+themebox switch tokyonight               # switch, icons included
+themebox switch tokyonight --keep-icons  # leave the current icon theme alone
 ```
 
 It backs up every file it replaces, then:
@@ -863,7 +853,7 @@ sit side by side in COSMIC's Dark and Light slots and share one Claude Desktop
 theme, so after the first time only the Firefox add-on and the wallpaper are
 left by hand. Add `--keep-icons` to keep one icon colour across the pair.
 
-Leaving Tokyo Night is the next rice's `./scripts/switch.sh`. `./cursors/uninstall.sh`
+Leaving Tokyo Night is `themebox switch <the next rice>`. `./cursors/uninstall.sh`
 puts the Pop cursor back.
 
 ---
@@ -899,5 +889,8 @@ puts the Pop cursor back.
 
 ## License
 
-MIT. The cursor artwork keeps the terms of KDE's Oxygen project, see
-[`cursors/README.md`](cursors/README.md).
+MIT for the configs and scripts. The cursor artwork keeps the terms of KDE's
+Oxygen project, see [`cursors/README.md`](cursors/README.md). The wallpapers in
+`backgrounds/` are recoloured from other people's artwork and keep their
+original terms unless Credits says otherwise; open an issue to have one credited
+or removed.
